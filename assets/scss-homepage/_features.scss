@@ -1,0 +1,54 @@
+#features{
+    margin-top:100px;
+    min-height: 653px;
+    background-size: 739px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-image: url(../images/online-bank.png);
+    h2{
+        margin-bottom:40px;
+        font-size: 32px;
+         line-height: 48px;
+         letter-spacing: .25px;
+         font-weight: 300;
+         padding-left: 28px;
+    }
+    h5{
+    color: rgba(0,0,0,.70);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 28px;
+    }
+    p{
+    font-weight: 500;
+    color: rgba(0,0,0,.50);
+    padding-left: 28px;
+   
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    }
+    
+   .features-item{
+    max-width: 55%;
+   }
+ 
+}
+#features .row{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+@media only screen and (max-width:992px){
+    #features{
+        background-image: url("") !important;
+        .row{
+            width: 100% !important;
+        }
+        .features-item{
+            min-width: 70% !important;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+#info{
+   
+    margin-top: 50px;
+    .info-text{
+        margin-bottom:30px;
+    }
+    .info-body{
+       display: flex;
+     
+       overflow-x:auto;
+       width: 100%;
+        a{
+            text-decoration: none;
+            margin-top: 5px;
+            color:rgba(0,0,0,0.5);
+            &:hover{
+                color: #099a71;
+            }
+        }
+        p{
+            
+         font-size:15px; 
+         font-weight: 400;
+         
+        }
+    }
+    .info-footer{
+        a{ display: flex; 
+            align-items: center;
+            color: #099a71;
+            text-decoration: none;
+            span{
+                font-size:16px;
+            }
+        } 
+        margin-top:40px;
+    }
+}
+@media only screen and (max-width:992px){
+    #info .info-body{
+        flex-wrap: nowrap !important;
+    
+      }
+      #info .info-body .info-item{
+       min-width: 300px;
+      }
+}

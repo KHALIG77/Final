@@ -1,0 +1,26 @@
+#loans-page-information{
+    margin-top:50px;
+    h2{
+        font-size:30px;
+        font-weight: 300;  
+        margin-bottom: 60px;  
+}
+.loans-info-items{
+    flex-wrap: nowrap;
+    span{
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size:15px;
+        font-weight: 400;
+    }
+}
+}
+@media only screen and (max-width:992px){
+    .loans-info-items{
+        flex-wrap: wrap !important;
+        .loans-information-item{
+            margin-top: 20px;
+        }
+    }
+}

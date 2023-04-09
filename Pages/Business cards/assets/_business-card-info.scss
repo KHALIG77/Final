@@ -1,0 +1,80 @@
+#business-card-info{
+    margin-top:100px;
+    .row{
+        padding: 30px 20px ;
+    }
+    .card-content{
+        margin-bottom:60px;
+    }
+   .btn-card-about{
+    
+    color:#099a71;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+   }
+    .container{
+        border-radius: 10px;
+        background-color: white;
+    }
+
+   
+    .business-card-info-item{
+        
+        padding: 40px 0px;
+        background-color: white;
+    }
+    .card-content-about{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .col-md-3{
+            padding: 0;
+            padding-right:10px ;
+        }
+    }
+    .card-details{
+        background-color: white;
+        margin:50px 30px;
+    }
+    .card-details-image {
+        margin-right:30px;
+        padding-left: 30px;
+    }
+    .card-details-item{
+        margin-top: 20px;
+    }
+ 
+    .card-content{
+        h2{
+            font-size:30px ;
+            font-weight: 300;
+        }
+        p{
+            color: rgba(0,0,0,0.50);
+        }
+    }
+    .card-info-footer{
+        background-color: white;
+       
+    }
+}
+@media only screen and (max-width:992px){
+ .btn{
+    width: 100%;
+ }
+.btn-card-about{
+margin-top:10px;
+    width: 100%;
+}
+.card-content{
+    margin-top:20px;
+}
+.card-photo{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin:50px;
+}
+}

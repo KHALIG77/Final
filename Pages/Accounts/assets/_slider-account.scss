@@ -1,0 +1,30 @@
+#slider-account{
+    padding-top:80px;
+    background-color: rgb(255, 235, 240);   
+    background-image: url("../../../assets/images/accounts.jpg");
+    background-position:center 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .container{
+        h1{
+            font-size:40px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        a{
+            margin-top:40px;
+            padding:15px 30px;
+        }
+     
+        .slider-account-content{
+            padding:100px 0px;
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    #slider-account{
+    
+            background-image: url("");
+      
+    }
+}

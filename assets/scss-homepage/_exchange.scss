@@ -1,0 +1,80 @@
+#exchange{
+    margin-top:80px;
+    h4{
+        margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: .25px;
+    }
+    p{
+        margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,0.5);
+    }
+    .exchange-body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  .exchange-usd th,.exchange-rubl th{
+    color: rgba(0,0,0,0.5);
+    width: 220px;
+    
+  }
+  .exchange-usd,.exchange-rubl {
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    border-radius: 10px;
+    width: 48%;
+    background-color: white;
+    padding: 30px 0px 0px 30px;
+    
+    td{
+        padding:30px 0px;
+    }
+  }
+  h5{
+    font-weight: 300;
+    font-size:30px;
+  }
+    .usd-logo,.eu-logo,.ru-logo,.gb-logo{
+        display: flex;
+        flex-wrap: wrap;
+        h5{
+            font-weight: 300;
+            font-size:30px;
+            margin-left:20px;
+            
+        }
+    }
+    .exchange-rubl{
+        margin-left:20px;
+    }
+    .exchange-footer{
+        a{
+            align-items: center;
+            text-decoration: none;
+            color: #099a71;
+        }
+        .material-symbols-outlined{
+            font-size: 16px;
+        }
+            
+        
+        margin-top:60px;
+    }
+}
+@media only screen and (max-width:992px){
+    #exchange  .exchange-usd,.exchange-rubl{
+        width: 100% !important;
+    }
+    #exchange .exchange-rubl{
+        margin-left: 0 !important;
+        margin-top:30px;
+    }
+}

@@ -1,0 +1,60 @@
+#opening-account{
+    padding-top: 60px;
+    h2{
+
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 300;
+    letter-spacing: .25px;
+    margin-bottom: 20px;
+    }
+    .scrollable-account{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top:30px;
+        p{
+            color:#099a71;
+            margin: 0px;
+        }
+        span{
+            color: #099a71 ;
+           
+           
+        }
+    }
+    .account-opening-item{
+        border-radius: 10px;
+        padding: 30px;
+        background-color: white;
+        width: 368px;
+        height: 176px;
+        margin-right:20px;
+        h6{
+            margin-right: 20px;
+        }
+       
+       
+    }
+    p{ 
+        margin-left:14px;
+        max-width: 800px;
+        color:rgba(0,0,0,0.50)
+    }
+    a{
+       
+        h6{
+          
+            margin-bottom: 20px;
+            color:black;
+        }
+        text-decoration: none;
+        
+    }
+}
+@media only screen and (max-width:992px){
+    #opening-account{
+        .account-opening-item{
+           min-width: 350px ;
+        }
+    }
+}

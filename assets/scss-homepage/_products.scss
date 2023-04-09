@@ -1,0 +1,110 @@
+#products h2{
+    font-size: 32px;
+    padding-left: 28px;
+    width: 60%;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: .25px;  
+    margin:40px 0;
+
+}
+#products{
+    max-height: 800px;
+}
+
+.products-parent{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-top:40px;
+}
+.product-pos,.product-credit{
+    &:hover{
+        box-shadow: 1px 1px;
+    }
+    background-color: #e7f4f9;
+    margin-left:15px;
+    width: 48%;
+    padding:50px;
+    padding-right: 280px;
+    border-radius: 8px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/pos-terminal.png);
+    h5{
+        margin-bottom: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color:black;
+    }
+    p{
+        color: rgba(0,0,0,.6)
+    }
+    a{ 
+        color: #099a71;
+        text-decoration: none;
+    }
+}
+.product-credit {
+    background-color: #ffebf0;
+    background-image: url(../images/business-cards.png);
+}
+.product-finance,.product-commerce,.product-banking{
+    background-image: url(../images/factoring.png);
+    width: 30%;
+    padding:20px 20px;
+    background-color: #fdf6e7;
+    padding-right: 150px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    margin-top:20px;
+    margin-left: 15px;
+    background-position: 100%;
+    &:hover{
+        box-shadow: 1px 1px;
+    }
+    a{
+        color: #099a71;
+        text-decoration: none;
+    }
+    h5{
+        margin-bottom: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color:black;
+    }
+    p{
+        color: rgba(0,0,0,.6)
+    }
+}
+.product-commerce{
+    background-color: #e0f3ed;
+    background-image: url(../images/e-commerce.png);
+}
+.product-banking{
+    background-color: #f4f5f4;
+    background-image: url(../images/bank-guarantee.png);
+}
+@media only screen and (max-width:992px){
+    #products{
+        margin-top:100px;
+        h2{
+            width: 100% 
+            !important;
+        }
+    }
+    #products .container{
+        padding-top:80px;
+    }
+    #products .products-parent{
+        flex-wrap: nowrap !important;
+    }
+    #products .products-parent .product-pos,.product-credit,.product-finance,.product-commerce,.product-banking{
+        min-width: 310px;
+        background-image: url("") !important;
+        padding-right: 0px !important;
+        height: 300px;
+    }
+}

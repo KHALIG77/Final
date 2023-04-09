@@ -1,0 +1,54 @@
+#mobile-banking{
+    margin-top:100px;
+    padding:80px 0;
+    background-image: url(../images/mobile-image.svg);
+    background-repeat: no-repeat;
+    background-color:white;
+    background-size: contain;
+    background-position: 100% 0;
+    .mobile-text{
+        width: 50%;
+        h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: .15px;
+    margin-bottom:24px;
+        }
+        p{
+            width: 85%;
+            font-weight: 400;
+            color: rgba(0,0,0,0.5);
+        }
+    }
+    .mobile-buttons{
+     
+        img{
+            width: 141px;
+            height: 41px;
+        }
+        a{
+            margin-top:10px;
+            display: block;
+        }
+    }
+    .mobile-actions{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .mobile-qr{
+        margin-top:5px;
+         margin-left:10px;
+    }
+}
+@media only screen and (max-width:992px){
+    #mobile-banking{
+        background-image: url("") !important;
+        h2,p{
+            width: 80% !important;
+        }
+        .mobile-text{
+            width: 100% !important;
+        }
+        }
+}

@@ -1,0 +1,29 @@
+#business-card-usage{
+    margin-top:80px;
+    .usage-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h4{
+        font-size:30px;
+        font-weight: 400;
+        
+        span{
+            font-weight: 700;
+        font-size:30px;
+        }
+      }
+h6{
+    font-size: 20px;
+}
+p{
+    color:rgba(0,0,0,0.50)
+}
+    }
+
+}
+@media only screen and (max-width:992px){
+    .usage-image{
+        display: none;
+    }
+}

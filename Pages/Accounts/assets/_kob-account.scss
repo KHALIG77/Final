@@ -1,0 +1,29 @@
+#account-page-kob{
+    margin-top:80px;
+    background-image: url(../../../assets/images/kob-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color:white;
+    .row{
+       padding:90px 0px;
+       h3{
+        font-size:46px;
+        font-weight: 300;
+       }
+       .kob-margin{
+        margin-top:50px;
+       }
+       .btn{
+        padding:15px 30px;
+        margin-top: 30px;
+       }
+    }
+}
+@media only screen and (max-width:992px){
+    #account-page-kob{
+        .btn{
+            width: 100%;
+        }
+    }
+}

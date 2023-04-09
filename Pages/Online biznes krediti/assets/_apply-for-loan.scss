@@ -1,0 +1,50 @@
+#apply-for-loan{
+    margin-top:50px;
+    .container{
+        background-image: url(../../../assets/images/zero_step.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 10px bottom;
+    }
+    background-color: #f1f9f7;
+    .row{
+        .col-md-6{
+            padding:60px 0px;
+            h4{
+                font-size:32px;
+                font-weight: 300;
+                margin-bottom: 40px;
+            }
+            h6{
+                font-size: 20px;
+
+            }
+            .apply-buttons{
+                margin-top:50px;
+            }
+p{
+    font-size: 14px;
+    color:rgba(0,0,0,0.50)
+}
+        }
+        justify-content: flex-end;
+    }
+    .btn-white{
+        background-color: white;
+        border: 1px solid gray;
+        color:#058d66;
+    }
+}
+@media only screen and (max-width:992px){
+    #apply-for-loan{
+        .container{
+            background-image: url("");
+            .apply-buttons{
+                button{
+                    width: 100%;
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+}

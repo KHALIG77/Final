@@ -1,0 +1,531 @@
+footer {
+  background-color: white;
+}
+footer ul {
+  list-style: none;
+}
+
+#footer-contacts {
+  margin-top: 100px;
+  background-color: white;
+  padding-top: 50px;
+}
+#footer-contacts .logo-opacity {
+  display: none;
+}
+#footer-contacts .row {
+  justify-content: space-between;
+}
+#footer-contacts .footer-contacts-item .footer-call {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+#footer-contacts .footer-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#padding-1 {
+  padding-left: 100px;
+}
+
+#padding-2 {
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+.footer-icons-responsive {
+  display: none;
+}
+
+#footer-navigation {
+  margin-top: 40px;
+}
+#footer-navigation .footer-icons a {
+  margin-right: 10px;
+}
+#footer-navigation .row {
+  justify-content: space-between;
+}
+#footer-navigation ul li {
+  padding: 10px 16px;
+}
+#footer-navigation ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer-navigation ul li a:hover {
+  color: black;
+}
+
+#footer-copyright .copyright-content {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-copyright .copyright-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+  #footer-navigation {
+    display: none;
+  }
+  #padding-1, #padding-2 {
+    padding-left: 0px;
+  }
+  .copyright-content {
+    flex-direction: column;
+  }
+  .footer-icons-responsive {
+    display: flex;
+    position: absolute;
+    right: 100px !important;
+  }
+  .footer-icons-responsive a {
+    padding-top: 30px;
+    margin-left: 7px;
+  }
+  #footer-contacts .logo-none-opacity {
+    display: none;
+  }
+  #footer-contacts .logo-opacity {
+    display: block;
+  }
+  #footer-contacts .row {
+    flex-direction: column;
+  }
+  #footer-contacts .footer-contacts-item {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #footer-contacts .footer-contacts-item .footer-call {
+    margin-bottom: 0px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 141, 102);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.carousel-item {
+  transition: 1s ease-in-out;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn {
+  color: white;
+  background-color: #058d66;
+  padding: 8px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(164, 255, 164);
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+}
+
+.container-navbar {
+  padding-top: 10px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu ul {
+  margin: 0;
+  margin-right: 180px;
+  display: flex;
+}
+.header-menu ul li {
+  list-style: none;
+  padding: 15px 10px;
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.header-menu ul li a {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+.header-menu ul li a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid #058d66;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 30px;
+  color: red;
+}
+
+.header-info {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+.header-info:hover {
+  display: block;
+}
+
+.forbusiness, .forcredit, .forfactoring, .fortransaction, .foradditional-operations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.forbusiness ul, .forcredit ul, .forfactoring ul, .fortransaction ul, .foradditional-operations ul {
+  padding-right: 90px;
+}
+.forbusiness li, .forcredit li, .forfactoring li, .fortransaction li, .foradditional-operations li {
+  list-style: none;
+  padding: 10px;
+}
+.forbusiness a, .forcredit a, .forfactoring a, .fortransaction a, .foradditional-operations a {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.forbusiness a:hover, .forcredit a:hover, .forfactoring a:hover, .fortransaction a:hover, .foradditional-operations a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.forcredit, .forfactoring, .fortransaction {
+  margin-left: 140px;
+  justify-content: flex-start;
+}
+
+.forfactoring, .fortransaction {
+  height: 270px;
+}
+
+.hamburger-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #navbar .hamburger-menu {
+    display: block;
+  }
+  #navbar .header-menu {
+    display: none;
+  }
+  #navbar .hamburger-nav {
+    display: block;
+  }
+  .container-navbar {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .hamburger-menu {
+    color: black;
+    display: none;
+  }
+}
+#accordion-account-fag {
+  margin-top: 40px;
+}
+#accordion-account-fag h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#accordion-account-fag .accordion-account {
+  margin-top: 40px;
+}
+#accordion-account-fag .accordion-act-item {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  margin-top: 20px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a {
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a p {
+  color: #099a71;
+  margin-bottom: 0px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a span {
+  color: #099a71;
+}
+#accordion-account-fag .accordion-act-body {
+  padding: 8px;
+}
+#accordion-account-fag .accordion-act-body p {
+  max-width: 700px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#accordion-account-fag .accordion-act-body a {
+  color: #099a71;
+  text-decoration: none;
+}
+
+#accordion-businesscard-fag {
+  padding-top: 60px;
+}
+
+#account-page-kob {
+  margin-top: 80px;
+  background-image: url(../../../assets/images/kob-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#account-page-kob .row {
+  padding: 90px 0px;
+}
+#account-page-kob .row h3 {
+  font-size: 46px;
+  font-weight: 300;
+}
+#account-page-kob .row .kob-margin {
+  margin-top: 50px;
+}
+#account-page-kob .row .btn {
+  padding: 15px 30px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #account-page-kob .btn {
+    width: 100%;
+  }
+}
+#account-page-kob {
+  background-image: url("../../../assets/images/for-all-needs.jpg");
+}
+#account-page-kob h3, #account-page-kob h5 {
+  color: black;
+}
+#account-page-kob h6 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#slider-account {
+  padding-top: 80px;
+  background-color: rgb(255, 235, 240);
+  background-image: url("../../../assets/images/accounts.jpg");
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#slider-account .container h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#slider-account .container a {
+  margin-top: 40px;
+  padding: 15px 30px;
+}
+#slider-account .container .slider-account-content {
+  padding: 100px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  #slider-account {
+    background-image: url("");
+  }
+}
+#slider-account {
+  margin-top: 65px;
+  background: linear-gradient(283.08deg, rgba(241, 249, 247, 0.56) -5.65%, rgba(224, 243, 241, 0.56) 38.92%, rgba(253, 246, 231, 0.56) 64.99%, rgba(255, 235, 240, 0.56) 100.86%);
+  background-image: url(../../../assets/images/business-cards\ \(2\).png);
+  width: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  max-height: 500px;
+}
+#slider-account p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#slider-account a {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #slider-account {
+    background-image: url("");
+  }
+  #slider-account a {
+    display: block;
+    width: 100%;
+  }
+}
+#business-card-usage {
+  margin-top: 80px;
+}
+#business-card-usage .usage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#business-card-usage .usage-content h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#business-card-usage .usage-content h4 span {
+  font-weight: 700;
+  font-size: 30px;
+}
+#business-card-usage .usage-content h6 {
+  font-size: 20px;
+}
+#business-card-usage .usage-content p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+  .usage-image {
+    display: none;
+  }
+}
+#business-card-info {
+  margin-top: 100px;
+}
+#business-card-info .row {
+  padding: 30px 20px;
+}
+#business-card-info .card-content {
+  margin-bottom: 60px;
+}
+#business-card-info .btn-card-about {
+  color: #099a71;
+  padding: 8px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+#business-card-info .container {
+  border-radius: 10px;
+  background-color: white;
+}
+#business-card-info .business-card-info-item {
+  padding: 40px 0px;
+  background-color: white;
+}
+#business-card-info .card-content-about {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#business-card-info .card-content-about .col-md-3 {
+  padding: 0;
+  padding-right: 10px;
+}
+#business-card-info .card-details {
+  background-color: white;
+  margin: 50px 30px;
+}
+#business-card-info .card-details-image {
+  margin-right: 30px;
+  padding-left: 30px;
+}
+#business-card-info .card-details-item {
+  margin-top: 20px;
+}
+#business-card-info .card-content h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+#business-card-info .card-content p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#business-card-info .card-info-footer {
+  background-color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .btn {
+    width: 100%;
+  }
+  .btn-card-about {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .card-content {
+    margin-top: 20px;
+  }
+  .card-photo {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin: 50px;
+  }
+}
+#business-card-order {
+  margin-top: 70px;
+}
+#business-card-order .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+#business-card-order .row img {
+  margin-bottom: 15px;
+}
+#business-card-order .row h6 {
+  font-size: 20px;
+}
+#business-card-order .row p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#business-card-order h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+  #business-card-order {
+    margin-left: 10px;
+  }
+  #business-card-order .col-md-4 {
+    min-width: 350px;
+  }
+}/*# sourceMappingURL=businesscard.css.map */

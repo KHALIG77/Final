@@ -1,0 +1,47 @@
+@import '../../../assets/scss-homepage/slider';
+.slide-1{
+    background-image: url('../../../assets/images/Group393.svg');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 80% center;
+    .slide-1-info{
+        width: 40%;
+    }
+    .btn-white{
+        background-color: white;
+        border: 1px solid #c5c7c6;
+        padding-left:15px;
+        padding-right: 15px;
+        margin-left: 10px;
+        color:#099a71;
+        &:hover{
+            color:rgba(0,0,0,0.50)
+        }
+    }
+    
+}
+.slide-2{
+    background-image: url('../../../assets/images/salary-cards-tariffs.png');
+    min-height: 504px;
+    background-repeat: no-repeat;
+    background-size: 460px;
+    background-position-x:90%;
+    background-position-y:80px ;
+
+
+}
+.slide-2-info,.slide-3-info{
+    width: 40%;
+}
+.slide-3{
+    background-image: url(../../../assets/images/salary-cards.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 80px;
+}
+@media only screen and (max-width:992px){
+    .slide-1-info,.slide-2-info,.slide-3-info{
+        width: 80% !important;
+        margin:0px auto;
+    }
+}

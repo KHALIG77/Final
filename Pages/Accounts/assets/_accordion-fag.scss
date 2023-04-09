@@ -1,0 +1,44 @@
+#accordion-account-fag{
+    margin-top:40px;
+    h2{
+        font-size:30px;
+        font-weight: 400;
+    }
+    .accordion-account{
+        margin-top:40px;
+    }
+    .accordion-act-item{
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid  rgba(0,0,0,0.38) ;
+        margin-top:20px;
+        .accordion-act-head{
+            a{
+            cursor: pointer;
+                border-radius: 5px;
+                text-decoration: none;
+                padding:20px 10px;
+                p{
+                   
+                    color: #099a71;
+                    margin-bottom: 0px;
+                }
+                span{
+                    color: #099a71;
+                }
+            }
+        }
+      
+    }
+    .accordion-act-body{
+        padding: 8px;
+        p{
+            max-width: 700px;
+            color:rgba(0,0,0,0.50)
+        }
+a{
+   color: #099a71; 
+   text-decoration: none;
+}
+    }
+}

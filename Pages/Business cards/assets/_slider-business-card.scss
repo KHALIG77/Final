@@ -1,0 +1,26 @@
+@import '../../Accounts/assets/slider-account';
+
+#slider-account{
+   margin-top: 65px;
+   background: linear-gradient(283.08deg,rgba(241,249,247,.56) -5.65%,rgba(224,243,241,.56) 38.92%,rgba(253,246,231,.56) 64.99%,rgba(255,235,240,.56) 100.86%);
+    background-image: url(../../../assets/images/business-cards\ \(2\).png);
+    width: 100%;
+    background-position: 100% ;
+    background-repeat: no-repeat;
+    max-height: 500px;
+    p{
+        color: rgba(0,0,0,0.50);
+    }
+   a{
+    display: none;
+   }
+}
+@media only screen and (max-width:992px){
+    #slider-account{
+        background-image: url("");
+        a{
+            display: block;
+            width:100%;
+        }
+    }
+}

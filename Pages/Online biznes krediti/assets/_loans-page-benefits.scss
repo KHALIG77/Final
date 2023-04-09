@@ -1,0 +1,41 @@
+#loans-page-benefits{
+  margin-top:50px;
+  h4{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 300;
+    letter-spacing: .25px;
+    margin-bottom: 50px;
+  }
+    .row{
+        flex-wrap: nowrap ;
+        padding-left:10px;
+
+    }
+    .loans-benefit-item{
+   
+        img{
+            width: 70px;
+            height: 70px;
+            margin-bottom:20px;
+        }
+        h6{
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media only screen and (max-width:992px){
+    #loans-page-benefits {
+        .row{
+            flex-wrap: wrap ;
+        }
+        .loans-benefit-item{
+            margin-top:10px;
+        }
+    }
+}
