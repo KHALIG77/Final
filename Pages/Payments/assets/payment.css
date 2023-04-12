@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 141, 102);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.carousel-item {
+  transition: 1s ease-in-out;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn {
+  color: white;
+  background-color: #058d66;
+  padding: 13px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(164, 255, 164);
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+}
+
+.container-navbar {
+  padding-top: 10px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu ul {
+  margin: 0;
+  margin-right: 180px;
+  display: flex;
+}
+.header-menu ul li {
+  list-style: none;
+  padding: 15px 10px;
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.header-menu ul li a {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+.header-menu ul li a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid #058d66;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 30px;
+  color: red;
+}
+
+.header-info {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+.header-info:hover {
+  display: block;
+}
+
+.forbusiness, .forcredit, .forfactoring, .fortransaction, .foradditional-operations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.forbusiness ul, .forcredit ul, .forfactoring ul, .fortransaction ul, .foradditional-operations ul {
+  padding-right: 90px;
+}
+.forbusiness li, .forcredit li, .forfactoring li, .fortransaction li, .foradditional-operations li {
+  list-style: none;
+  padding: 10px;
+}
+.forbusiness a, .forcredit a, .forfactoring a, .fortransaction a, .foradditional-operations a {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.forbusiness a:hover, .forcredit a:hover, .forfactoring a:hover, .fortransaction a:hover, .foradditional-operations a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.forcredit, .forfactoring, .fortransaction {
+  margin-left: 140px;
+  justify-content: flex-start;
+}
+
+.forfactoring, .fortransaction {
+  height: 270px;
+}
+
+.hamburger-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #navbar .hamburger-menu {
+    display: block;
+  }
+  #navbar .header-menu {
+    display: none;
+  }
+  #navbar .hamburger-nav {
+    display: block;
+  }
+  .container-navbar {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .hamburger-menu {
+    color: black;
+    display: none;
+  }
+  .ul-business li, .ul-credit li, .ul-transaction li, .ul-additional li, .ul-factoring li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  .responsive-nav {
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  .ul-business a, .ul-additional a, .ul-credit a, .ul-factoring a, .ul-transaction a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+footer {
+  background-color: white;
+}
+footer ul {
+  list-style: none;
+}
+
+#footer-contacts {
+  margin-top: 100px;
+  background-color: white;
+  padding-top: 50px;
+}
+#footer-contacts .logo-opacity {
+  display: none;
+}
+#footer-contacts .row {
+  justify-content: space-between;
+}
+#footer-contacts .footer-contacts-item .footer-call {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+#footer-contacts .footer-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#padding-1 {
+  padding-left: 100px;
+}
+
+#padding-2 {
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+.footer-icons-responsive {
+  display: none;
+}
+
+#footer-navigation {
+  margin-top: 40px;
+}
+#footer-navigation .footer-icons a {
+  margin-right: 10px;
+}
+#footer-navigation .row {
+  justify-content: space-between;
+}
+#footer-navigation ul li {
+  padding: 10px 16px;
+}
+#footer-navigation ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer-navigation ul li a:hover {
+  color: black;
+}
+
+#footer-copyright .copyright-content {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-copyright .copyright-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+  #footer-navigation {
+    display: none;
+  }
+  #padding-1, #padding-2 {
+    padding-left: 0px;
+  }
+  .copyright-content {
+    flex-direction: column;
+  }
+  .footer-icons-responsive {
+    display: flex;
+    position: absolute;
+    right: 100px !important;
+  }
+  .footer-icons-responsive a {
+    padding-top: 30px;
+    margin-left: 7px;
+  }
+  #footer-contacts .logo-none-opacity {
+    display: none;
+  }
+  #footer-contacts .logo-opacity {
+    display: block;
+  }
+  #footer-contacts .row {
+    flex-direction: column;
+  }
+  #footer-contacts .footer-contacts-item {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #footer-contacts .footer-contacts-item .footer-call {
+    margin-bottom: 0px;
+  }
+}
+#slider-posterminal .slider-posterminal-item {
+  min-height: 504px;
+  padding-top: 104px;
+  background-position: 100% 100%;
+  background-size: 45%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-color: rgb(223, 242, 236);
+  background-image: url(../../../assets/images/acquiring.png);
+}
+#slider-posterminal .slider-content {
+  margin-top: 50px;
+}
+#slider-posterminal .slider-content h1 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#slider-posterminal .slider-content p {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+#slider-posterminal .slider-content a {
+  padding: 15px 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #slider-posterminal a {
+    width: 100%;
+  }
+  #slider-posterminal .slider-posterminal-item {
+    background-image: url("");
+  }
+}
+#payment-slider .slider-posterminal-item {
+  background-image: url("../../../assets/images/payments.png");
+  background-color: #f1f9f7;
+  background-size: 32%;
+}
+
+@media only screen and (max-width: 992px) {
+  #payment-slider .slider-posterminal-item {
+    background-image: url("");
+  }
+}
+#payment-info-head {
+  margin-top: 50px;
+}
+#payment-info-head h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#payment-info-head p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#special-features {
+  margin-top: 60px;
+}
+#special-features h3 {
+  font-weight: 300;
+  font-size: 35px;
+}
+#special-features .row {
+  margin-top: 60px;
+}
+#special-features .col-md-4 {
+  margin-top: 20px;
+}
+#special-features .col-md-4 img {
+  margin-right: 10px;
+}
+#special-features .col-md-4 p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#ecommerce-info {
+  margin-top: 70px;
+}
+#ecommerce-info h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#ecommerce-info p {
+  max-width: 700px;
+}
+#ecommerce-info .row {
+  flex-wrap: nowrap;
+}
+#ecommerce-info .col-md-4 {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 25px;
+  margin-right: 15px;
+  background-color: #fafafa;
+}
+#ecommerce-info .col-md-4 h6 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+#ecommerce-info .clock h6 {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  #ecommerce-info .row {
+    flex-wrap: wrap;
+  }
+}
+#payment-info .col-md-4 {
+  background-color: white;
+}
+#payment-info .col-md-4 p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#account-page-kob {
+  margin-top: 80px;
+  background-image: url(../../../assets/images/kob-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#account-page-kob .row {
+  padding: 90px 0px;
+}
+#account-page-kob .row h3 {
+  font-size: 46px;
+  font-weight: 300;
+}
+#account-page-kob .row .kob-margin {
+  margin-top: 50px;
+}
+#account-page-kob .row .btn {
+  padding: 15px 30px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #account-page-kob .btn {
+    width: 100%;
+  }
+}
+#payment-kob #account-page-kob {
+  background-image: url("../../../assets/images/kob-payment.jpg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#payment-about {
+  margin: 60px 0;
+}
+#payment-about h2 {
+  font-weight: 300;
+}
+#payment-about .content {
+  width: 50%;
+}
+#payment-about .content .d-flex {
+  margin-top: 30px;
+}
+#payment-about .content .d-flex img {
+  margin-right: 15px;
+}
+#payment-about .content a {
+  margin-top: 35px;
+}
+#payment-about .content p {
+  max-width: 300px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#payment-about .image {
+  width: 50%;
+}
+#payment-about .image img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  #payment-about .image {
+    display: none;
+  }
+  #payment-about .content {
+    width: 100%;
+  }
+  #payment-about .content .btn {
+    width: 100%;
+  }
+}
+#accordion-account-fag {
+  margin-top: 40px;
+}
+#accordion-account-fag h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#accordion-account-fag .accordion-account {
+  margin-top: 40px;
+}
+#accordion-account-fag .accordion-act-item {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  margin-top: 20px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a {
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a p {
+  color: black;
+  margin-bottom: 0px;
+}
+#accordion-account-fag .accordion-act-item .accordion-act-head a span {
+  color: #099a71;
+}
+#accordion-account-fag .accordion-act-body {
+  padding: 8px;
+}
+#accordion-account-fag .accordion-act-body p {
+  max-width: 700px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#accordion-account-fag .accordion-act-body a {
+  color: #099a71;
+  text-decoration: none;
+}/*# sourceMappingURL=payment.css.map */

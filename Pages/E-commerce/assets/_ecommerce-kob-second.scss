@@ -1,0 +1,43 @@
+#ecommerce-kob-second{
+    margin-top:60px;
+    padding: 40px 0px;
+    background-image: url("../../../assets/images/pay-by-link-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   .container{
+    margin-top:25px;
+    margin-bottom:25px;
+    background-image: url("../../../assets/images/paybylink.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 450px;
+ 
+    h4{
+        margin-bottom: 33px;
+        font-family: Rubik AZ;
+        font-size: 32px;
+        color: rgba(0,0,0,.87);
+    }
+    a{
+        margin-top: 30px;
+        min-width: 200px;
+        padding: 15px 35px;
+    }
+    p{
+        font-size: 20px;
+        color: rgba(0,0,0,.57);
+    }
+    
+    
+   }
+}
+@media only screen and (max-width:992px){
+    #ecommerce-kob-second{
+        .container{
+            background-image: url("");
+        }
+        a{
+            width: 100%;
+        }
+    }
+}

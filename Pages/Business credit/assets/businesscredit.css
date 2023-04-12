@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 141, 102);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.carousel-item {
+  transition: 1s ease-in-out;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn {
+  color: white;
+  background-color: #058d66;
+  padding: 13px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(164, 255, 164);
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+}
+
+.container-navbar {
+  padding-top: 10px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu ul {
+  margin: 0;
+  margin-right: 180px;
+  display: flex;
+}
+.header-menu ul li {
+  list-style: none;
+  padding: 15px 10px;
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.header-menu ul li a {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+.header-menu ul li a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid #058d66;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 30px;
+  color: red;
+}
+
+.header-info {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+.header-info:hover {
+  display: block;
+}
+
+.forbusiness, .forcredit, .forfactoring, .fortransaction, .foradditional-operations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.forbusiness ul, .forcredit ul, .forfactoring ul, .fortransaction ul, .foradditional-operations ul {
+  padding-right: 90px;
+}
+.forbusiness li, .forcredit li, .forfactoring li, .fortransaction li, .foradditional-operations li {
+  list-style: none;
+  padding: 10px;
+}
+.forbusiness a, .forcredit a, .forfactoring a, .fortransaction a, .foradditional-operations a {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.forbusiness a:hover, .forcredit a:hover, .forfactoring a:hover, .fortransaction a:hover, .foradditional-operations a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.forcredit, .forfactoring, .fortransaction {
+  margin-left: 140px;
+  justify-content: flex-start;
+}
+
+.forfactoring, .fortransaction {
+  height: 270px;
+}
+
+.hamburger-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #navbar .hamburger-menu {
+    display: block;
+  }
+  #navbar .header-menu {
+    display: none;
+  }
+  #navbar .hamburger-nav {
+    display: block;
+  }
+  .container-navbar {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .hamburger-menu {
+    color: black;
+    display: none;
+  }
+  .ul-business li, .ul-credit li, .ul-transaction li, .ul-additional li, .ul-factoring li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  .responsive-nav {
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  .ul-business a, .ul-additional a, .ul-credit a, .ul-factoring a, .ul-transaction a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+footer {
+  background-color: white;
+}
+footer ul {
+  list-style: none;
+}
+
+#footer-contacts {
+  margin-top: 100px;
+  background-color: white;
+  padding-top: 50px;
+}
+#footer-contacts .logo-opacity {
+  display: none;
+}
+#footer-contacts .row {
+  justify-content: space-between;
+}
+#footer-contacts .footer-contacts-item .footer-call {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+#footer-contacts .footer-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#padding-1 {
+  padding-left: 100px;
+}
+
+#padding-2 {
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+.footer-icons-responsive {
+  display: none;
+}
+
+#footer-navigation {
+  margin-top: 40px;
+}
+#footer-navigation .footer-icons a {
+  margin-right: 10px;
+}
+#footer-navigation .row {
+  justify-content: space-between;
+}
+#footer-navigation ul li {
+  padding: 10px 16px;
+}
+#footer-navigation ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer-navigation ul li a:hover {
+  color: black;
+}
+
+#footer-copyright .copyright-content {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-copyright .copyright-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 992px) {
+  #footer-navigation {
+    display: none;
+  }
+  #padding-1, #padding-2 {
+    padding-left: 0px;
+  }
+  .copyright-content {
+    flex-direction: column;
+  }
+  .footer-icons-responsive {
+    display: flex;
+    position: absolute;
+    right: 100px !important;
+  }
+  .footer-icons-responsive a {
+    padding-top: 30px;
+    margin-left: 7px;
+  }
+  #footer-contacts .logo-none-opacity {
+    display: none;
+  }
+  #footer-contacts .logo-opacity {
+    display: block;
+  }
+  #footer-contacts .row {
+    flex-direction: column;
+  }
+  #footer-contacts .footer-contacts-item {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #footer-contacts .footer-contacts-item .footer-call {
+    margin-bottom: 0px;
+  }
+}
+#page-header {
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+#page-header h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+#page-header p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#page-online-business {
+  margin-top: 40px;
+}
+#page-online-business p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#page-online-business .for-background {
+  background-image: url("../../../assets/images/flexible_credit_cover (1).png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+#page-online-business h5 {
+  font-size: 24px;
+}
+#page-online-business h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+#page-online-business .for-buttons {
+  margin-top: 30px;
+}
+#page-online-business .for-buttons .d-flex {
+  flex-wrap: wrap;
+}
+#page-online-business .for-buttons a {
+  padding: 15px 35px;
+}
+#page-online-business .col-md-6 {
+  margin-top: 15px;
+  padding-left: 0;
+}
+#page-online-business .btn-about {
+  background-color: white;
+  color: #058d66;
+  margin-left: 15px;
+}
+#page-online-business .btn-about:hover {
+  background-color: rgb(204, 202, 199);
+}
+
+@media only screen and (max-width: 992px) {
+  #page-online-business .d-flex {
+    flex-wrap: wrap;
+  }
+  #page-online-business .d-flex a {
+    width: 100%;
+    margin-left: 0;
+  }
+  #page-online-business .for-background {
+    background-image: url("");
+  }
+}
+#page-online-trade {
+  margin-top: 40px;
+}
+#page-online-trade p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#page-online-trade .for-background {
+  background-image: url("../../../assets/images/tobacco-card-background.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+#page-online-trade h5 {
+  font-size: 24px;
+}
+#page-online-trade h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+#page-online-trade .for-buttons {
+  margin-top: 30px;
+}
+#page-online-trade .for-buttons .d-flex {
+  flex-wrap: wrap;
+}
+#page-online-trade .for-buttons a {
+  padding: 15px 35px;
+}
+#page-online-trade .col-md-6 {
+  margin-top: 15px;
+  padding-left: 0;
+}
+#page-online-trade .btn-about {
+  background-color: white;
+  color: #058d66;
+  margin-left: 15px;
+}
+#page-online-trade .btn-about:hover {
+  background-color: rgb(204, 202, 199);
+}
+
+@media only screen and (max-width: 992px) {
+  #page-online-trade .d-flex {
+    flex-wrap: wrap;
+  }
+  #page-online-trade .d-flex a {
+    width: 100%;
+    margin-left: 0;
+  }
+  #page-online-trade .for-background {
+    background-image: url("");
+  }
+}/*# sourceMappingURL=businesscredit.css.map */

@@ -1,0 +1,37 @@
+#ecommerce-info{
+    margin-top:70px;
+    h2{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    p{
+        max-width: 700px;
+    }
+    .row{
+        flex-wrap: nowrap;
+    }
+    .col-md-4{
+        margin-top:20px;
+        h6{
+            font-size: 20px;
+            margin:15px 0;
+        }
+        border-radius: 10px;
+        padding:25px;
+        
+        margin-right: 15px;
+        background-color: #fafafa;
+    }
+    .clock{
+        h6{
+            margin-top:15px;
+        }
+    }
+    }
+    @media only screen and (max-width:992px){
+        #ecommerce-info{
+            .row{
+                flex-wrap: wrap;
+            }
+        }
+    }

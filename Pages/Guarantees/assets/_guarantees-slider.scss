@@ -1,0 +1,27 @@
+#guarantees-slider{
+    margin-top:60px;
+    background: linear-gradient(276.89deg,#fff8f8 -11.21%,#f9fcff 103.31%);
+    width: 100%;
+h1{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+p{
+    color:rgba(0,0,0,0.50);
+    margin-bottom: 20px;
+}
+    padding: 100px 0px;
+    .for-arrow{
+        color:rgba(0,0,0,0.50)
+    }
+    .btn{
+        padding: 15px 30px;
+    }
+}
+@media only screen and (max-width:992px){
+    #guarantees-slider{
+        .btn{
+            width: 100%;
+        }
+    }
+}

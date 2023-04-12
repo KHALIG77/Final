@@ -154,6 +154,10 @@ function activCheck(){
    }
     })
 }
+const btnNav = document.querySelector(".btn-nav")
+btnNav.addEventListener("click",()=>{
+    window.location.href = "https://pashabank.digital/login#/";
+})
 
 }
 

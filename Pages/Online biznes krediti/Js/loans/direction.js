@@ -20,4 +20,6 @@ window.location.href = "https://pashabank.digital/login?product=loans&creditType
     }
 })
 })
+
+
 }

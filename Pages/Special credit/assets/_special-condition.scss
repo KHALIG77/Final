@@ -1,0 +1,31 @@
+#special-condition{
+    margin-top: 60px;
+    h4{
+        font-size:32px;
+        font-weight: 300;
+        margin-bottom:50px;
+
+    }
+   .condition-body{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    padding: 20px;
+    .col-md-4{
+        margin-top:30px;
+        padding-left: 40px;
+        p{
+            margin-bottom:5px;
+            color: rgba(0,0,0,0.60);
+        }
+        h5{
+            font-size: 25px;
+        }
+    }
+   }
+   .info{
+    margin-top:30px;
+    padding-left: 25px;
+   color: rgba(0,0,0,0.60); 
+   }
+}

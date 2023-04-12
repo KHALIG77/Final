@@ -111,5 +111,26 @@ i{
         color:black;
         display: none   ;
     }
+    .ul-business ,.ul-credit,.ul-transaction,.ul-additional,.ul-factoring{
+   
+        li{
+            margin-left:20px;
+            list-style: none;
+        }
+       
+        
+    }
+    .responsive-nav{
+        position: absolute;
+        width: 100%;
+        padding:20px 10px;
+        background-color: white;
+    }
+    .ul-business,.ul-additional,.ul-credit,.ul-factoring,.ul-transaction{
+       
+        a{
+            color:rgba(0, 0, 0, 0.6) 
+        }
+    }
    
 }

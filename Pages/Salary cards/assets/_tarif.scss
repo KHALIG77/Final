@@ -1,0 +1,88 @@
+#tarif{
+    margin-top:60px;
+    h2{
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: .25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    }
+  
+    .tarif-item{
+        width: 32%;
+        border-radius: 10px;
+        margin-right: 10px;
+        background-color: white;
+    }
+    p{
+        color: rgba(0,0,0,0.50);
+    }
+    .tarif-item-head{
+        padding-top: 20px;
+        h6{
+            margin:15px 0px;
+        }
+        text-align: center;
+        height: 200px;
+    }
+    .body-info{
+
+        padding-top: 14px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right:10px;
+        }
+      
+    }
+    .body-price{
+        
+        span{
+            color:#099a71;
+            font-size: 32px;
+        }
+    }
+    .body-price-padding{
+        padding-top:20px;
+    }
+    .tarif-item{
+        min-width: 300px;
+        padding:15px;
+    }
+    .border-body{
+        border-top: 1px solid rgb(190, 184, 184);
+        border-bottom:1px solid rgb(190, 184, 184) ;
+        span{
+            color: rgb(190, 184, 184) ;
+        }
+    }
+    .tarif-body-condition{
+        margin-top:20px;
+        .body-condition{
+            margin-bottom: 20px;
+            img{
+                margin-right: 10px;
+            }
+        }
+        p{
+            margin-bottom: 0px;
+           
+        }
+    }
+ .btn{
+    margin: 15px 0px;
+    width: 100%;
+ }
+ .row{
+    flex-wrap: nowrap;
+    margin-top: 50px;
+ }
+.tarif-body{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.tarif-margin-left{
+    margin-left: 20px;
+}
+    
+}

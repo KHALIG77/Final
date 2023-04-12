@@ -138,7 +138,7 @@ body {
 .btn {
   color: white;
   background-color: #058d66;
-  padding: 8px 26px;
+  padding: 13px 26px;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
@@ -263,6 +263,19 @@ i {
     color: black;
     display: none;
   }
+  .ul-business li, .ul-credit li, .ul-transaction li, .ul-additional li, .ul-factoring li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  .responsive-nav {
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  .ul-business a, .ul-additional a, .ul-credit a, .ul-factoring a, .ul-transaction a {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 #accordion-account-fag {
   margin-top: 40px;
@@ -287,7 +300,7 @@ i {
   padding: 20px 10px;
 }
 #accordion-account-fag .accordion-act-item .accordion-act-head a p {
-  color: #099a71;
+  color: black;
   margin-bottom: 0px;
 }
 #accordion-account-fag .accordion-act-item .accordion-act-head a span {

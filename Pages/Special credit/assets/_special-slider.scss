@@ -1,0 +1,22 @@
+@import '../../Online biznes krediti/assets/loans-page-slider';
+#special-slider{
+    #loans-page-slider{
+        .container{
+            background-image: url("../../../assets/images/special_business_loan.png");
+            background-size: 85%;
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    #special-slider{
+        #loans-page-slider{
+            .container{
+                background-image: url("");
+               ;
+            }
+        }
+    }
+    
+
+}

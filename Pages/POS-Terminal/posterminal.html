@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+    <link rel="stylesheet" href="./assets/posterminal.css">
+    <script src="./Js/posterminal.js" defer type="module"></script>
+    <title>POS-Terminal</title>
+</head>
+<body>
+    <header id="posterminal-header">
+        <section id="navbar">
+          <div class="container-navbar">
+            <div class="hamburger-nav">
+              <span class="material-symbols-outlined hamburger-menu"> menu </span>
+              <span class="material-symbols-outlined d-none"> close </span>
+            </div>
+  
+            <div class="logo">
+              <a href="../../index.html">
+                <img src="../../assets/images/logo.svg" alt="Pasha Logo" />
+              </a>
+            </div>
+            <div class="header-menu">
+              <ul>
+                <li><a href="" data-check="business" class="business">Biznes üşün xidmətlər</a>  </li>
+                <li > <a href=""  class="credit">Kreditlər</a> </li>
+                <li ><a href="" class="factoring"> Faktorinq</a></li>
+                <li ><a href=" " class="transaction">Sənədli əməliyyatlar</a> </li>
+                <li ><a href="" class="additional-operations">Əlavə xidmətlər</a>
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="header-button">
+              <button class="btn">Onlayn Bank</button>
+            </div>
+          </div>
+          <div class="responsive-nav d-none">
+            <ul>
+              <li class="business-responsive">
+                Biznes üşün xidmətlər
+                <ul class="ul-business d-none">
+                  <li><a  href="https://www.google.com/">Tariflər</a></li>
+                  <li><a href="#">GRO platforması</a></li>
+                  <li><a href="#">Biznes üçün hesab</a></li>
+                  <li><a href="#">Əməkhaqqi layihısi</a></li>
+                  <li><a href="#">Ödənişlər</a></li>
+                  <li><a href="#">Biznes kartlar</a></li>
+                  <li><a href="#">POS terminal və E-kassa</a></li>
+                  <li><a href="#">Elektron ticarət</a></li>
+                  <li><a href="#">Linklə ödəniş</a></li>
+                </ul>
+              </li>
+              <li class="credit-responsive">
+                Kreditlər
+                <ul class="ul-credit d-none">
+                  <li><a href="#">Onlayn biznes kreditləri</a></li>
+                  <li><a href="#">Biznes kreditləri</a></li>
+                  <li><a href="#">Gömrük kartı üzrə kredit xətti</a></li>
+                  <li><a href="#">SİF Kreditləri</a></li>
+                </ul>
+                
+              </li>
+              <li class="factoring-responsive">
+                  Faktorinq
+                  <ul class="ul-factoring d-none">
+                  <li><a href="#">Invoysların maliyyələşdirilməsi</a></li>
+                  <li><a href="#">Alış sifarişi əsasında maliyyələşmə</a></li>
+                  <li><a href="#">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
+                  </ul>
+              </li>
+              <li class="transaction-responsive">
+                  Sənədli əməliyyatlar
+                   <ul class="ul-transaction d-none">
+                  <li><a href="#">Ekspress-Tender qarantiyası</a></li>
+                  <li><a href="#">Ticarətin maliyyələşdirilməsi</a></li>
+                  <li><a href="#">Bank qarantiyası</a></li>
+                  <li><a href="#">Akkreditiv</a></li>
+                  <li><a href="#">İnkasso</a></li>
+                   </ul>
+              </li>
+              <li class="additional-responsive">
+                   Əlavə xidmətlər
+               <ul class="ul-additional d-none">
+                  <li><a href="#">Inkassasiya</a></li>
+                  <li><a href="#">Depozitlər</a></li>
+                  <li><a href="#">Bank seyfləri</a></li>
+                  <li><a href="#">Bulud CRM</a></li>
+                  <li><a href="#">ÇatBot</a></li>
+                  <li><a href="#">Elektron-ticarət üçün mobil tətbiq</a></li>
+                  <li><a href="#">Umico MasterPass</a></li>
+                  <li><a href="#">PAŞA Biznes</a></li>
+               </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header-info">
+            <div class="container">
+              <div class="forbusiness d-none">
+                <ul>
+                  <li><a data-check="business" href="#">Tariflər</a></li>
+                  <li><a data-check="business" href="#">GRO platforması</a></li>
+                  <li><a data-check="business" href="#">Biznes üçün hesab</a></li>
+                  <li><a data-check="business" href="#">Əməkhaqqi layihısi</a></li>
+                  <li><a data-check="business" href="#">Ödənişlər</a></li>
+                </ul>
+                <ul>
+                  <li><a data-check="business" href="#">Biznes kartlar</a></li>
+                  <li><a data-check="business" href="#">POS terminal və E-kassa</a></li>
+                  <li><a data-check="business" href="#">Elektron ticarət</a></li>
+                  <li><a data-check="business" href="#">Linklə ödəniş</a></li>
+                </ul>
+              </div>
+              <div class="forcredit d-none">
+                <ul>
+                  <li><a data-check="credit" href="#">Onlayn biznes kreditləri</a></li>
+                  <li><a data-check="credit" href="#">Biznes kreditləri</a></li>
+                  <li><a data-check="credit" href="#">Gömrük kartı üzrə kredit xətti</a></li>
+                  <li><a data-check="credit" href="#">SİF Kreditləri</a></li>
+                </ul>
+              </div>
+              <div class="forfactoring d-none">
+                <ul>
+                  <li><a data-check="factoring" href="#">Invoysların maliyyələşdirilməsi</a></li>
+                  <li><a data-check="factoring" href="#">Alış sifarişi əsasında maliyyələşmə</a></li>
+                  <li><a data-check="factoring" href="#">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
+                </ul>
+              </div>
+              <div class="fortransaction d-none">
+                <ul>
+                  <li><a data-check="transaction" href="#">Ekspress-Tender qarantiyası</a></li>
+                  <li><a data-check="transaction" href="#">Ticarətin maliyyələşdirilməsi</a></li>
+                  <li><a data-check="transaction" href="#">Bank qarantiyası</a></li>
+                  <li><a data-check="transaction" href="#">Akkreditiv</a></li>
+                  <li><a data-check="transaction" href="#">İnkasso</a></li>
+                </ul>
+              </div>
+              <div class="foradditional-operations d-none">
+                <ul>
+                  <li><a data-check="operations" href="#">Inkassasiya</a></li>
+                  <li><a data-check="operations" href="#">Depozitlər</a></li>
+                  <li><a data-check="operations"  href="#">Bank seyfləri</a></li>
+                  <li><a data-check="operations" href="#">Bulud CRM</a></li>
+                </ul>
+                <ul>
+                  <li><a data-check="operations" href="#">ÇatBot</a></li>
+                  <li><a data-check="operations" href="#">Elektron-ticarət üçün mobil tətbiq</a></li>
+                  <li><a data-check="operations" href="#">Umico MasterPass</a></li>
+                  <li><a data-check="operations" href="#">PAŞA Biznes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+<main>
+<section id="slider-posterminal">
+    <div class="slider-posterminal-item">
+        <div class="container">
+            <div class="row slider-content">
+                <div class="col-md-6">
+                    <h1>
+                        Ödənişləri POS-terminalla nağdsız qəbul edin.
+                    </h1>
+                    <p>
+                        Biznes ehtiyaclarınıza uyğun POS-terminal və ya E-kassa seçin. 
+                    </p>
+                    <a href="https://www.pashabank.digital/login#/signup" class="btn">Sifariş et</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="posterminal-features">
+<div class="container">
+  <h2>
+    Nağdsız dövriyyənizi artırın 
+</h2>
+<p>
+  POS–terminallar və E-kassalar ticarət və xidmət müəssisələrində ödənişləri nağdsız şəkildə qəbul etməyə imkan yaradır. Cihazları onlayn sifariş edərək obyektinizdə quraşdırın. 
+</p>
+<div class="row">
+  <div class="col-md-4 d-flex">
+    <div class="pos-col-img">
+      <img src="../../assets/images/computer.PNG">
+    </div>
+    <div class="pos-col-item">
+      <h6>Dövriyyədən asılı olaraq
+        aylıq ödənişsiz</h6>
+      <p>POS-terminallar və Smart Kassa aparatlarını depozitlə və müvafiq dövriyyə tələbindən asılı olaraq aylıq ödənişsiz əldə edin.</p>
+    </div>
+  </div>
+  <div class="col-md-4 d-flex">
+    <div class="pos-col-img">
+      <img src="../../assets/images/order3.PNG">
+    </div>
+    <div class="pos-col-item">
+      <h6>Ünvana çatdırılma</h6>
+      <p>Banka gəlmədən POS-terminal sifariş edin, şəhər daxili 3, ölkə daxili 7 iş günü ərzində ünvanınıza çatdıraq.</p>
+    </div>
+  </div>
+  <div class="col-md-4 d-flex">
+    <div class="pos-col-img">
+    <img src="../../assets/images/order1.PNG">
+  </div>
+    <div class="pos-col-item">
+      <h6>Təmassız ödəniş
+      </h6>
+      <p>100 AZN-ədək ödənişləri PIN-kod daxil olunmadan qəbul edin.
+
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+<section id="posterminal-kob">
+  <div class="container">
+    <div class="row">
+      <div class="kob-content col-md-6">
+        <h2>
+          POS-terminalla nağd əməliyyat xərclərindən azad olun, satışlarınızı artırın! 
+      </h2>
+      </div>
+      <div class="kob-image col-md-6">
+        <img src="../../assets/images/loan-numbers.svg">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="posterminal-types">
+  <div class="container">
+  
+    <h2>Ehtiyaclarınıza uyğun terminal seçin</h2>
+    <div class="row">
+      <div class="col-md-6 type-item">
+        <div class="type-head">
+          <img src="../../assets/images/pos.png">
+        </div>
+        <div class="type-body">
+         
+          <h5>POS–terminal</h5>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>Təmassız ödənişlərin qəbulu</p>
+          </div>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>Rahat və sürətli əməliyyat sistemi</p>
+          </div>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>3G şəbəkə dəstəyi</p>
+          </div>
+        </div>
+        <div class="type-footer">
+          
+            <button class="btn btn-terminal">Daha ətraflı</button>
+           <a href="https://www.pashabank.digital/login#/signup" class="btn">Sifariş et</a>
+        
+        </div>
+      </div>
+      <div class="col-md-6 type-item">
+        <div class="type-head">
+          <img src="../../assets/images/pos.png">
+          <img src="../../assets/images/emblem.png" class="emblem">
+          <p>Dövlət vergi xidməti ilə inteqrasiya</p>
+        </div>
+        <div class="type-body">
+         
+          <h5>POS–terminal + E–kassa
+          </h5>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>E-kassa imkanları
+            </p>
+          </div>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>POS–terminal funksiyası
+            </p>
+          </div>
+          <div class="body-flex d-flex">
+            <img src="../../assets/images/done.svg">
+            <p>QR kodla çeklərin çapı
+
+            </p>
+          </div>
+        </div>
+        <div class="type-footer">
+          
+            <button class="btn btn-ekassa">Daha ətraflı</button>
+           <a href="https://www.pashabank.digital/login#/signup" class="btn">Sifariş et</a>
+        
+        </div>
+      </div>
+    </div>
+    <p class="info">Diqqət! "İstehlakçıların hüquqlarının müdafiəsi haqqında" Azərbaycan Respublikası Qanununun 17-ci maddəsinə uyğun olaraq Ticarət, məişət və digər növ xidmətlərin göstərilməsi zamanı müştərilərlə hesablaşmaların aparılması üçün müvafiq POS-terminallar quraşdırılmalıdır. Əks halda müvafiq pozuntunu törədən şəxslərə AR Vergi Məcəlləsinin 58.7 maddəsinə əsasən 1000 manatdan 6000 manatadək cərimə tətbiq oluna bilər.
+
+    </p>
+  </div>
+</section>
+<section id="posterminal-modal" class="d-none modal-check">
+<div class="modal-content first-modal d-none">
+<div class="modal-head d-flex justify-content-between">
+  <h4>POS–terminal</h4>
+  <button class="close-btn">
+  <span class="material-symbols-outlined"> close </span>
+</button>
+</div>
+<div class="modal-body">
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Təmassız ödənişlərin qəbulu</p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Rahat və sürətli əməliyyat sistemi
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>4G və WiFi dəstəyi
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>5.5 sensorlu ekran
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Uzun ömürlü enerji saxlama qabiliyyəti
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>3G şəbəkə dəstəyi
+
+    </p>
+  </div>
+</div>
+<div class="modal-footer d-flex justify-content-end">
+  <a href="https://www.pashabank.digital/login#/signup" target="_blank" class="btn">Sifariş et</a>
+</div>
+
+</div>
+
+
+<div class="modal-content second-modal d-none">
+  <div class="modal-head d-flex justify-content-between">
+  <h4>POS–terminal</h4>
+<button class="close-btn">
+  <span class="material-symbols-outlined"> close </span>
+</button>
+   
+
+
+</div>
+<div class="modal-body">
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>E-kassa imkanları</p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>POS–terminal funksiyası
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Dövlət vergi xidməti ilə inteqrasiya
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Anbar uçot sistemi funksiyası
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>QR kodla çeklərin çapı
+
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Təmassız ödənişlərin qəbulu
+
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Rahat interfeys
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>5.5 sensorlu ekran
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Android proqram təminatı
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Yüksək keyfiyyətli kamera
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>4G və WiFi dəstəyi
+
+    </p>
+  </div>
+  <div class="d-flex">
+    <img src="../../assets/images/done.svg" >
+    <p>Kassa proqram təminatlı cihaz
+
+    </p>
+  </div>
+</div>
+<div class="modal-footer d-flex justify-content-end">
+  <a href="https://www.pashabank.digital/login#/signup" target="_blank" class="btn">Sifariş et</a>
+</div>
+
+</div>
+
+
+
+</section>
+<section id="posterminal-service">
+  <div class="container">
+    <h2>Xidmətə üç addımda qoşulun</h2>
+   
+      <div class="row">
+        <div class="col-md-4 d-flex">
+          <img src="../../assets/images/1.PNG" >
+          <p>Onlayn bankda qeydiyyatdan
+            keçin və giriş edin</p>
+        </div>
+        <div class="col-md-4 d-flex">
+          <img src="../../assets/images/2.PNG" >
+          <p>
+            Vaxtınıza qənaət edərək
+            onlayn hesab açın</p>
+        </div>
+        <div class="col-md-4 d-flex">
+          <img src="../../assets/images/3.PNG" >
+          <p>Hesabınıza deposit məbləği yerləşdirərək, sadə formanı doldurun</p>
+        </div>
+      </div>
+   
+  </div>
+</section>
+<section id="posterminal-document">
+  <div class="container">
+    <h2>Lazım olan sənədlər</h2>
+   
+      <div class="for-scroll">
+      <div class="col-md-4">
+        <h5>Asan imza</h5>
+        <p>Kimliyi təsdiq edən, onlayn xidmətlərdən istifadə etmək və rəqəmsal imza ilə sənədləri təsdiq etmək üçün istifadə olunan mobil identifikasiya.</p>
+        <a href="https://asanimza.az/en/" target="_blank" class="d-flex">
+          <span>Necə əldə etməli</span>
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <h5>Şəhadətnamə dublikat
+        </h5>
+        <p>Dövlət qeydiyyatı vergi orqanları tərəfindən aparılan hüquqi şəxslər və fərdi sahibkarlara Bankda hesab açmaq üçün təqdim edilən sənəd.
+
+</p>
+        <a href="https://asanimza.az/en/" target="_blank"  class="d-flex">
+          <span>Necə əldə etməli</span>
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <h5>Vergi uçot kodu
+        </h5>
+        <p>Vergi ödəyicisinin təsərrüfat subyektinin uçot məlumatlarının vergi ödəyicisinin reyestrinə daxil edildikdə ona təqdim olunan 15 rəqəmli kod.
+
+        </p>
+        <a href="https://asanimza.az/en/" target="_blank" class="d-flex">
+          <span>Necə əldə etməli</span>
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+ 
+</section>
+</main>
+      <footer >
+        <section id="footer-contacts">
+        <div class="container">
+          <div class="row"> <li class="footer-icons-responsive">
+            <a href="#"><img src="../../assets/images/facebookicon.PNG" alt="facebook"></a>
+            <a href="#"><img src="../../assets/images/twittericom.PNG" alt="twitter"></a>
+            <a href="#"><img src="../../assets/images/linkedin.PNG" alt="linkedin"></a>
+            <a href="#"><img src="../../assets/images/youtube.PNG" alt="youtube"></a>
+            <a href="#"><img src="../../assets/images/instagram.PNG" alt="instagram"></a>
+          </li>
+            <div class="footer-logo footer-contacts-item">
+              <a href="#">
+                <img class="logo-none-opacity" src="../../assets/images/logo.svg" alt="logo">
+            <img class="logo-opacity" src="../../assets/images/PB-Logo_40.svg" alt="logo with opacity">
+            
+              </a>
+              
+            
+          </div>
+          <div class="footer-contacts-item" id="padding-1">
+            <p class="footer-call">
+              *9123 / (+99 412) 496 50 00
+          </p>
+            <p class="footer-label">
+              
+              Fərdi müştərilər üçün
+                                        
+            </p>
+          </div>
+          <div class="footer-contacts-item " id="padding-2">
+            <p class="footer-call">
+              *8123 / (+994 12) 496 50 04
+          </p>
+            <p class="footer-label">
+              
+              Korporativ müştərilər üçün
+                                        
+            </p>
+          </div>
+          <div class="footer-contacts-item" id="padding-3">
+            <p class="footer-call">
+              customer.care@pashabank.az
+          </p>
+            <p class="footer-label">
+              
+              E-mail
+                                        
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+        <section id="footer-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="footer-nav-items ">
+              <ul>
+              <li>Korporativ Bankçılıq</li>
+              <li><a href="#">
+                Hesablaşma-kassa xidmətləri
+            </a></li>
+              
+              <li><a href="">
+                Depozitlər
+            </a></li>
+              <li><a href="">
+                İnkassasiya
+            </a></li>
+              <li><a href="">
+                Bank seyfləri
+            </a></li>
+              <li><a href="">
+                Bank kartları
+            </a></li>
+              <li><a href="#">
+                
+                Korporativ kreditləşmə
+                                    
+              </a></li>
+              <li><a href="#">
+                Faktorinq 
+            </a></li>
+              <li><a href="#">
+                
+                Sənədli əməliyyatlar
+                                    
+              </a></li>
+              <li><a href="#">
+                Ekvayrinq (POS) xidmətləri
+            </a></li>
+              <li><a href="#"> 
+                Distant bank xidmətləri
+            </a></li>
+              <li><a href="">
+                Qeyri-maliyyə xidmətləri
+            </a></li>
+            <li><a href="">
+              
+              Ümumi şərtlər toplusu 
+                                    
+            </a></li>
+            </ul>
+            </div>
+            <div  class="footer-nav-items">
+              <ul>
+                <li>Kiçik və Orta Biznes</li>
+                <li><a href="#">
+                  Biznes üçün hesab
+              </a></li>
+                
+                <li><a href="#">
+                  Əməkhaqqı layihısi
+              </a></li>
+                <li><a href="#">
+                  Elektron ticarət
+              </a></li>
+                <li><a href="#">
+                  POS-terminal vı E-kassa
+              </a></li>
+                <li><a href="">
+                  Biznes kartlar
+              </a></li>
+                <li><a href="">
+                  
+                  Onlayn biznes krediti
+                                      
+                </a></li>
+                <li><a href="#">
+                 İnvoyslarin maliyyələşdirilməsi
+              </a></li>
+                <li><a href="#">
+                  
+                  Bank qarantiyası
+                                      
+                </a></li>
+                <li><a href="#">
+                  Ekspress-Tender qarantiyası
+              </a></li>
+                <li><a href="#"> 
+                  Akkreditiv
+              </a></li>
+                <li><a href="#">
+                  Ticarətin maliyyələşdirilməsi
+              </a></li>
+              <li><a href="#">
+                
+                Linklə ödəniş
+                                      
+              </a></li>
+              </ul>
+            </div>
+            <div  class="footer-nav-items">
+              <ul>
+                <li>Fərdi Bankçılıq</li>
+                <li><a href="#">
+                  Private Banking
+              </a></li>
+                
+                <li><a href="#">
+                  Hesablaşma-kassa xidmətləri
+              </a></li>
+                <li><a href="#">
+                  Depozitlər
+              </a></li>
+                <li><a href="#">
+                  Bank seyfləri
+              </a></li>
+                <li><a href="#">
+                  Bank kartları
+              </a></li>
+                <li><a href="#">
+                  
+                Distant bank xidmətləri
+                                      
+                </a></li>
+                <li><a href="#">
+                Əlaqə mərkəzi
+              </a></li>
+                <li><a href="#">
+                  
+                  Kreditlər
+                                      
+                </a></li>
+                <li><a href="#">
+                  Mobil əlavə
+              </a></li>
+                <li><a href="#"> 
+                  Endirim platforması
+              </a></li>
+                <li><a href="#">
+                  Endirim platforması
+              </a></li>
+              <li><a href="#">
+                
+               Onlayn xidmətlər
+                                      
+              </a></li>
+              </ul>
+            </div>
+            <div  class="footer-nav-items">
+              <ul >
+                <li> Digər</li>
+                <li><a href="#">
+                 İnvestisiya bankçılığı
+              </a></li>
+                
+                <li><a href="#">
+                  Maliyyə İnstitutları
+              </a></li>
+                <li><a href="#">
+                  Haqqımızda
+              </a></li>
+                <li><a href="#">
+                 Əməliyyat ölkələri
+              </a></li>
+                <li><a href="#">
+                  Təklif və şikayətlər
+              </a></li>
+                <li><a href="#">
+                  
+                  Filiallar və bankomatlar 
+                                      
+                </a></li>
+                <li><a href="#">
+                 Əlaqə
+              </a></li>
+                <li><a href="#">
+                  
+                  Sənədli əməliyyatlar
+                                      
+                </a></li>
+                <li class="d-flex footer-icons">
+                  <a href="#"><img src="../../assets/images/facebookicon.PNG" alt="facebook"></a>
+                  <a href="#"><img src="../../assets/images/twittericom.PNG" alt="twitter"></a>
+                  <a href="#"><img src="../../assets/images/linkedin.PNG" alt="linkedin"></a>
+                  <a href="#"><img src="../../assets/images/youtube.PNG" alt="youtube"></a>
+                  <a href="#"><img src="../../assets/images/instagram.PNG" alt="instagram"></a>
+                </li>
+        
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        </section>
+        <hr>
+        <section id="footer-copyright">
+        <div class="container">
+         <div class="copyright-content">
+          <p>
+            © 2023, PAŞA Bank 
+        </p>
+        <p>
+          
+          Bank Azərbaycan Respublikası Mərkəzi Bankının 250 saylı 28 noyabr 2007-ci il tarixli lisenziyası əsasında fəaliyyət göstərir.
+                        
+        </p>
+         </div>
+        </div>
+        </section>
+    </footer>
+</body>
+</html>

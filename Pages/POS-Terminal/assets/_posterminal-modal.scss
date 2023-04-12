@@ -1,0 +1,52 @@
+#posterminal-modal{
+    h4{
+        font-weight: 300;
+    }
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    width: 100%;
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color:rgba(0,0,0,0.50);
+   
+    height: 100vh;
+    z-index: 999;
+    .modal-content{
+       position: absolute;
+       top:100px;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        max-width: 700px;
+        background-color:white;
+    
+        img{
+           margin-right: 10px;
+        }
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    .modal-body{
+        padding: 0;
+        .d-flex{
+            margin:20px;
+            margin-left: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(192, 166, 166);
+        }
+    }
+   .modal-head{
+    a{
+        cursor: pointer;
+    }
+   }
+   .close-btn{
+    background-color: white;
+    border: none;
+   }
+}

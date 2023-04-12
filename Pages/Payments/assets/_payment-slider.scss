@@ -1,0 +1,16 @@
+@import '../../POS-Terminal/assets/_slider-posterminal';
+#payment-slider{
+    .slider-posterminal-item{
+        background-image: url('../../../assets/images/payments.png');
+        background-color: #f1f9f7;
+        background-size: 32%;
+    }
+    
+}
+@media only screen and (max-width:992px){
+    #payment-slider{
+        .slider-posterminal-item{
+            background-image: url("");
+        }
+    }
+}

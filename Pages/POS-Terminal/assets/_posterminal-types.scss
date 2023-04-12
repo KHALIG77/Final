@@ -1,0 +1,73 @@
+#posterminal-types{
+    margin-top:60px;
+    .info{
+        color:rgba(0,0,0,0.60);
+        margin-top: 30px;
+    }
+    .row{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    h2{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .type-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+        min-height: 700px;
+        .type-head{
+            background-color: #f4f5f4;
+            padding: 80px 0px;
+            text-align: center;
+           
+            p{ position: absolute;
+                left: 150px;
+               top:300px;
+               
+                color:rgba(0,0,0,0.60);
+                margin-bottom: 0px;
+            }
+            
+        }
+        .type-body{
+            padding: 18px;
+            background-color: white;
+            img{
+                margin-right: 10px;
+            }
+            p{
+                margin-bottom: 0px;
+                color:rgba(0,0,0,0.60)
+            }
+            div{
+                margin:15px 0px;
+            }
+        }
+    }
+    .type-footer{
+        background-color: white;
+        padding: 18px;
+        button,a{
+            margin-bottom:10px;
+            width: 100%;
+            text-align: center;
+        }
+        button{
+            background-color: white;
+            color:#2b9275;
+            &:hover{
+                background-color:#93aaa4 ;
+                color: white;
+            }
+        }
+    }
+    .emblem{
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+}

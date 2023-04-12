@@ -1,0 +1,40 @@
+#ecommerce-slider{
+    background-image: url("../../../assets/images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+      
+        .container{
+            background-image: url("../../../assets/images/girl.png");
+            background-position:right 60px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-top: 160px;
+            padding-bottom: 80px;
+        }
+    .row{
+        h1{
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        p{
+            color:rgba(0,0,0,0.50);
+            margin-bottom: 25px;
+            
+        }
+        .btn{
+            padding: 15px 30px;
+            margin-top: 20px;
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    #ecommerce-slider{
+        .container{
+            background-image: url("");
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+}

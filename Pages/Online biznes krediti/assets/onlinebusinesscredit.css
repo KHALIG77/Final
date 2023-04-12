@@ -95,7 +95,7 @@ i {
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   #navbar .hamburger-menu {
     display: block;
   }
@@ -125,7 +125,7 @@ i {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(5, 141, 102);
+  background-color: #058d66;
   border-radius: 10px;
   border: 1px solid white;
 }
@@ -229,7 +229,7 @@ footer ul {
   color: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   #footer-navigation {
     display: none;
   }
@@ -297,7 +297,7 @@ footer ul {
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   #loans-page-slider .container {
     background-image: url("");
   }
@@ -340,7 +340,7 @@ footer ul {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   #loans-page-benefits .row {
     flex-wrap: wrap;
   }
@@ -367,7 +367,7 @@ footer ul {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   .loans-info-items {
     flex-wrap: wrap !important;
   }
@@ -443,6 +443,10 @@ footer ul {
 #youtube .youtube-text p {
   font-size: 10px;
 }
+#youtube img {
+  width: 200px;
+  height: 200px;
+}
 
 #apply-for-loan {
   margin-top: 50px;
@@ -481,12 +485,76 @@ footer ul {
   color: #058d66;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 762px) {
   #apply-for-loan .container {
     background-image: url("");
   }
   #apply-for-loan .container .apply-buttons button {
     width: 100%;
     margin-top: 10px;
+  }
+}
+#credit-calculator {
+  margin-top: 50px;
+}
+#credit-calculator h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#credit-calculator .range-count, #credit-calculator .range-month {
+  position: relative;
+}
+#credit-calculator .range-text-input {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #d6d7d6;
+  border-radius: 6px;
+  padding: 12px 20px 8px 16px;
+}
+#credit-calculator .range-text-label {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+#credit-calculator .count-text-input-style, #credit-calculator .month-text-input-style {
+  width: 100%;
+  font-family: Gothic A1;
+  font-size: 15px;
+  font-weight: 500;
+  background: transparent;
+  padding: 4px 0 0;
+  border: none;
+  outline: none;
+}
+#credit-calculator .range-slider-postfix {
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+#credit-calculator #count-range-input, #credit-calculator #month-range-input {
+  background-color: white;
+  overflow: hidden !important;
+  outline: none !important;
+  border: none !important;
+  position: relative;
+  height: 26px;
+  top: -16px;
+  z-index: 1;
+  width: 100%;
+}
+#credit-calculator .range-info {
+  margin-top: -20px;
+}
+#credit-calculator .btn-mg {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #credit-calculator .col-md-6 {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=onlinebusinesscredit.css.map */

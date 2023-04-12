@@ -1,0 +1,19 @@
+#posterminal-kob{
+    margin-top:60px;
+    padding: 65px 0px;
+    background-color: #f4f5f4;
+    h2{
+        margin-top: 30px;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width:992px){
+    #posterminal-kob{
+        .kob-image{
+            display: none;
+        }
+        .kob-content{
+            padding: 0px 30px;
+        }
+    }
+}

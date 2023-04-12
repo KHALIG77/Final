@@ -1,0 +1,68 @@
+#salary-advantages{
+    margin-top:50px;
+    h2{
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: .25px;
+    font-weight: 300;
+    }
+    .salary-advantages-nav{
+      margin-top: 20px;
+        .adv-btn-first{ position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+            // &::after{
+            //     content: "";
+            //    position: absolute;
+            //    background: #058d66;
+            //    width: 100%;
+            //    height: 2px;
+            //    left: 0;
+            //    bottom: -13px;
+            // }
+        }
+    //    .adv-btn-second::after{
+    //     content: "";
+    //     position: absolute;
+    //     display: none;
+    //     background: #058d66;
+    //     width: 100%;
+    //     height: 2px;
+    //     left: 0;
+    //     bottom: -13px;
+    //    }
+        .adv-btn-second{
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            color: rgba(0,0,0,0.50);
+            margin-right: 30px;
+        
+        }
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(184, 170, 170);
+    }
+    .individual-container,.card-container{
+        margin-top: 30px;
+        overflow-x: auto;
+        h6{
+            font-size:30px;
+            font-weight: 300;
+        }
+        p{
+            color:rgba(0,0,0,0.50)
+        }
+    }
+    .individual-advantages-item,.card-advantages-item{
+        min-width: 350px;
+        background-color: white;
+        margin-right: 10px;
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+    .advantages-item-content{
+        margin-right: 10px;
+    }
+}

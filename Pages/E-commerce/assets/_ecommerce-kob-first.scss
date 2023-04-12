@@ -1,0 +1,40 @@
+#ecommerce-kob-first{
+    margin-top:60px;
+    padding: 40px 0px;
+    background: linear-gradient(83.02deg,rgba(245,215,255,.56),rgba(240,224,243,.56) 41.84%,rgba(238,231,253,.56) 66.32%,rgba(235,247,255,.56));
+   .container{
+    margin-top:25px;
+    margin-bottom:25px;
+    background-image: url("../../../assets/images/Free-Bag-Mockup.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+   
+    img{
+        margin: 30px 0;
+    }
+    h4{
+        margin-bottom: 30px;
+        font-family: Rubik AZ;
+        font-size: 32px;
+        color: rgba(0,0,0,.87);
+    }
+    a{
+        background: #9c5c8f;
+        min-width: 200px;
+        padding: 15px 35px;
+       
+    }
+    
+    
+   }
+}
+@media only screen and (max-width:992px){
+    #ecommerce-kob-first{
+        .container{
+            background-image: url("");
+        }
+        a{
+            width: 100%;
+        }
+    }
+}

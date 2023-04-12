@@ -1,0 +1,20 @@
+#salary-features {
+    margin-top:50px;
+    .features-item{
+        background-color: white;
+        border-radius: 10px;
+        min-width: 340px;
+        padding: 20px;
+        margin-right:15px ;
+        h5{
+            color: rgba(0,0,0,0.80);
+            margin-top:30px;
+        }
+        
+    }
+    .row{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}

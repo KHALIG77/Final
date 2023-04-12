@@ -1,0 +1,21 @@
+@import './special-features';
+#special-how-work{
+    p{
+        margin-top:15px;
+    }
+    .btn-special{
+        display: none;
+    }
+}
+@media only screen and (max-width:992px){
+    #special-how-work{
+        .col-md-4{
+            display: flex;
+        }
+        .btn-special{
+            display: block;
+            margin-top: 10px;
+        }
+    }
+ 
+}

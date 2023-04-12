@@ -1,0 +1,21 @@
+@import '../../SIF credit/assets/sifcredit-slider';
+#loan-slider{
+    #sifcredit-slider{
+        background-image: url("");
+       background: linear-gradient(277.11deg,#f9eaf4 -15.15%,#f8f7f8 108.54%);
+      img{
+        width: 400px;
+      }
+      a{
+        margin-top:20px;
+      }
+    }
+    
+}
+@media only screen and (max-width:992px){
+    #loan-slider{
+        a{
+            width: 100%;
+        }
+    }
+}

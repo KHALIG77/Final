@@ -1,0 +1,72 @@
+#credit-calculator{
+    margin-top:50px;
+    
+    h2{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .range-count,.range-month{
+        position: relative;
+    }
+    .range-text-input{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border: 1px solid #d6d7d6;
+        border-radius: 6px;
+        padding: 12px 20px 8px 16px;
+    }
+    .range-text-label{
+        width: 100%;
+        color:rgba(0,0,0,0.60);
+        font-size:12px;
+    }
+    .count-text-input-style,.month-text-input-style{
+        width: 100%;
+     font-family: Gothic A1;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    padding: 4px 0 0;
+    border: none;
+    outline: none;
+   
+
+    }
+    .range-slider-postfix{
+    font-weight: 600;
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    }
+    #count-range-input,#month-range-input{
+       
+        background-color: white;
+        overflow: hidden !important;
+        outline: none !important;
+        border: none !important;
+        position: relative;
+        height: 26px;
+        top:-16px;
+        z-index: 1;
+         width: 100%;
+    
+    }
+    .range-info{
+        margin-top: -20px;
+    }
+ .btn-mg{
+    width: 100%;
+    margin-top: 30px;
+ }
+ 
+}
+@media only screen and (max-width:992px){
+    #credit-calculator{
+        .col-md-6{
+            margin-top: 20px;
+        }
+    }
+
+}
