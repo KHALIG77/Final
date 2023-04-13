@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +25,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+        
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -36,7 +38,17 @@
     <title>Pasha Bank</title>
   </head>
   <body>
+
+<!-- HEADER START -->
+
+
     <header id="home-header">
+      <section class="loading">
+        <div class="loading-content">
+          <img src="./assets/images/logo.svg" >
+          <h2>Paşa banka xoş gəlmisiniz</h2>
+        </div>
+      </section>
       <section id="navbar">
         <div class="container-navbar">
           <div class="hamburger-nav">
@@ -45,7 +57,7 @@
           </div>
 
           <div class="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="./assets/images/logo.svg" alt="Pasha Logo" />
             </a>
           </div>
@@ -69,120 +81,123 @@
             <li class="business-responsive">
               Biznes üşün xidmətlər
               <ul class="ul-business d-none">
-                <li><a  href="https://www.google.com/">Tariflər</a></li>
-                <li><a href="#">GRO platforması</a></li>
-                <li><a href="#">Biznes üçün hesab</a></li>
-                <li><a href="#">Əməkhaqqi layihısi</a></li>
-                <li><a href="#">Ödənişlər</a></li>
-                <li><a href="#">Biznes kartlar</a></li>
-                <li><a href="#">POS terminal və E-kassa</a></li>
-                <li><a href="#">Elektron ticarət</a></li>
-                <li><a href="#">Linklə ödəniş</a></li>
+                <li><a  href="https://sme.pashabank.az/tariff">Tariflər</a></li>
+                <li><a href="https://gro.az/">GRO platforması</a></li>
+                <li><a href="./Pages/Accounts/account.html">Biznes üçün hesab</a></li>
+                <li><a href="./Pages/Salary cards/salarycards.html">Əməkhaqqi layihısi</a></li>
+                <li><a href="./Pages/Payments/payment.html">Ödənişlər</a></li>
+                <li><a href="./Pages/Business cards/businesscard.html">Biznes kartlar</a></li>
+                <li><a href="./Pages/POS-Terminal/posterminal.html">POS terminal və E-kassa</a></li>
+                <li><a href="./Pages/E-commerce/ecommerce.html">Elektron ticarət</a></li>
+                <li><a href="https://sme.pashabank.az/pay-by-link">Linklə ödəniş</a></li>
               </ul>
             </li>
             <li class="credit-responsive">
               Kreditlər
               <ul class="ul-credit d-none">
-                <li><a href="#">Onlayn biznes kreditləri</a></li>
-                <li><a href="#">Biznes kreditləri</a></li>
-                <li><a href="#">Gömrük kartı üzrə kredit xətti</a></li>
-                <li><a href="#">SİF Kreditləri</a></li>
+                <li><a href="./Pages/Business credit/businesscredit.html">Onlayn biznes kreditləri</a></li>
+                <li><a href="./Pages/Business loan/loan.html">Biznes kreditləri</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/51">Gömrük kartı üzrə kredit xətti</a></li>
+                <li><a href="./Pages/SIF credit/sifcredit.html">SİF Kreditləri</a></li>
               </ul>
               
             </li>
             <li class="factoring-responsive">
                 Faktorinq
                 <ul class="ul-factoring d-none">
-                <li><a href="#">Invoysların maliyyələşdirilməsi</a></li>
-                <li><a href="#">Alış sifarişi əsasında maliyyələşmə</a></li>
-                <li><a href="#">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/29">Invoysların maliyyələşdirilməsi</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/sme_purchase_order_finance">Alış sifarişi əsasında maliyyələşmə</a></li>
+                <li><a href="./Pages/POS-Terminal/posterminal.html">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
                 </ul>
             </li>
             <li class="transaction-responsive">
                 Sənədli əməliyyatlar
                  <ul class="ul-transaction d-none">
-                <li><a href="#">Ekspress-Tender qarantiyası</a></li>
-                <li><a href="#">Ticarətin maliyyələşdirilməsi</a></li>
-                <li><a href="#">Bank qarantiyası</a></li>
-                <li><a href="#">Akkreditiv</a></li>
-                <li><a href="#">İnkasso</a></li>
+                <li><a href="./Pages/Accounts/account.html">Ekspress-Tender qarantiyası</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/38">Ticarətin maliyyələşdirilməsi</a></li>
+                <li><a href="./Pages/Guarantees/guarantees.html">Bank qarantiyası</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/36">Akkreditiv</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/37">İnkasso</a></li>
                  </ul>
             </li>
             <li class="additional-responsive">
                  Əlavə xidmətlər
              <ul class="ul-additional d-none">
-                <li><a href="#">Inkassasiya</a></li>
-                <li><a href="#">Depozitlər</a></li>
-                <li><a href="#">Bank seyfləri</a></li>
-                <li><a href="#">Bulud CRM</a></li>
-                <li><a href="#">ÇatBot</a></li>
-                <li><a href="#">Elektron-ticarət üçün mobil tətbiq</a></li>
-                <li><a href="#">Umico MasterPass</a></li>
-                <li><a href="#">PAŞA Biznes</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/12">Inkassasiya</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">Depozitlər</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">Bank seyfləri</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">Bulud CRM</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">ÇatBot</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">Elektron-ticarət üçün mobil tətbiq</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">Umico MasterPass</a></li>
+                <li><a href="https://www.pashabank.az/sme_banking/az/node/14">PAŞA Biznes</a></li>
              </ul>
             </li>
           </ul>
         </div>
-        <div class="header-info">
+        <div class="header-info d-none">
           <div class="container">
             <div class="forbusiness d-none">
               <ul>
-                <li><a data-check="business" href="#">Tariflər</a></li>
-                <li><a data-check="business" href="#">GRO platforması</a></li>
-                <li><a data-check="business" href="#">Biznes üçün hesab</a></li>
-                <li><a data-check="business" href="#">Əməkhaqqi layihısi</a></li>
-                <li><a data-check="business" href="#">Ödənişlər</a></li>
+                <li><a data-check="business" href="https://sme.pashabank.az/tariff">Tariflər</a></li>
+                <li><a data-check="business" href="https://gro.az/">GRO platforması</a></li>
+                <li><a data-check="business" href="./Pages/Accounts/account.html">Biznes üçün hesab</a></li>
+                <li><a data-check="business" href="./Pages/Salary cards/salarycards.html">Əməkhaqqi layihısi</a></li>
+                <li><a data-check="business" href="./Pages/Payments/payment.html">Ödənişlər</a></li>
               </ul>
               <ul>
-                <li><a data-check="business" href="#">Biznes kartlar</a></li>
-                <li><a data-check="business" href="#">POS terminal və E-kassa</a></li>
-                <li><a data-check="business" href="#">Elektron ticarət</a></li>
-                <li><a data-check="business" href="#">Linklə ödəniş</a></li>
+                <li><a data-check="business" href="./Pages/Business cards/businesscard.html">Biznes kartlar</a></li>
+                <li><a data-check="business" href="./Pages/POS-Terminal/posterminal.html">POS terminal və E-kassa</a></li>
+                <li><a data-check="business" href="./Pages/E-commerce/ecommerce.html">Elektron ticarət</a></li>
+                <li><a data-check="business" href="https://sme.pashabank.az/pay-by-link">Linklə ödəniş</a></li>
               </ul>
             </div>
             <div class="forcredit d-none">
               <ul>
                 <li><a data-check="credit" href="./Pages/Business credit/businesscredit.html">Onlayn biznes kreditləri</a></li>
-                <li><a data-check="credit" href="#">Biznes kreditləri</a></li>
-                <li><a data-check="credit" href="#">Gömrük kartı üzrə kredit xətti</a></li>
-                <li><a data-check="credit" href="#">SİF Kreditləri</a></li>
+                <li><a data-check="credit" href="./Pages/Business loan/loan.html">Biznes kreditləri</a></li>
+                <li><a data-check="credit" href="https://www.pashabank.az/sme_banking/az/node/51">Gömrük kartı üzrə kredit xətti</a></li>
+                <li><a data-check="credit" href="./Pages/SIF credit/sifcredit.html">SİF Kreditləri</a></li>
               </ul>
             </div>
             <div class="forfactoring d-none">
               <ul>
-                <li><a data-check="factoring" href="#">Invoysların maliyyələşdirilməsi</a></li>
-                <li><a data-check="factoring" href="#">Alış sifarişi əsasında maliyyələşmə</a></li>
-                <li><a data-check="factoring" href="#">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
+                <li><a data-check="factoring" href="https://www.pashabank.az/sme_banking/az/node/29">Invoysların maliyyələşdirilməsi</a></li>
+                <li><a data-check="factoring" href="https://www.pashabank.az/sme_banking/az/sme_purchase_order_finance">Alış sifarişi əsasında maliyyələşmə</a></li>
+                <li><a data-check="factoring" href="./Pages/POS-Terminal/posterminal.html">Təchizat zəncirinin maliyyələşdirilməsi</a></li>
               </ul>
             </div>
             <div class="fortransaction d-none">
               <ul>
-                <li><a data-check="transaction" href="#">Ekspress-Tender qarantiyası</a></li>
-                <li><a data-check="transaction" href="#">Ticarətin maliyyələşdirilməsi</a></li>
-                <li><a data-check="transaction" href="#">Bank qarantiyası</a></li>
-                <li><a data-check="transaction" href="#">Akkreditiv</a></li>
-                <li><a data-check="transaction" href="#">İnkasso</a></li>
+                <li><a data-check="transaction" href="./Pages/Accounts/account.html">Ekspress-Tender qarantiyası</a></li>
+                <li><a data-check="transaction" href="https://www.pashabank.az/sme_banking/az/node/38">Ticarətin maliyyələşdirilməsi</a></li>
+                <li><a data-check="transaction" href="./Pages/Guarantees/guarantees.html">Bank qarantiyası</a></li>
+                <li><a data-check="transaction" href="https://www.pashabank.az/sme_banking/az/node/36">Akkreditiv</a></li>
+                <li><a data-check="transaction" href="https://www.pashabank.az/sme_banking/az/node/36">İnkasso</a></li>
               </ul>
             </div>
             <div class="foradditional-operations d-none">
               <ul>
-                <li><a data-check="operations" href="#">Inkassasiya</a></li>
-                <li><a data-check="operations" href="#">Depozitlər</a></li>
-                <li><a data-check="operations"  href="#">Bank seyfləri</a></li>
-                <li><a data-check="operations" href="#">Bulud CRM</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/12">Inkassasiya</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">Depozitlər</a></li>
+                <li><a data-check="operations"  href="https://www.pashabank.az/sme_banking/az/node/14">Bank seyfləri</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">Bulud CRM</a></li>
               </ul>
               <ul>
-                <li><a data-check="operations" href="#">ÇatBot</a></li>
-                <li><a data-check="operations" href="#">Elektron-ticarət üçün mobil tətbiq</a></li>
-                <li><a data-check="operations" href="#">Umico MasterPass</a></li>
-                <li><a data-check="operations" href="#">PAŞA Biznes</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">ÇatBot</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">Elektron-ticarət üçün mobil tətbiq</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">Umico MasterPass</a></li>
+                <li><a data-check="operations" href="https://www.pashabank.az/sme_banking/az/node/14">PAŞA Biznes</a></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
     </header>
-    <main id="home-main">
+    <!-- HEADER END -->
+    <main >
+
+      <!-- SLIDER START -->
       <section id="slider">
         <div
           id="carouselExampleIndicators"
@@ -264,6 +279,8 @@
           </a>
         </div>
       </section>
+      <!-- SLIDER END -->
+      <!-- BENEFITS START -->
       <section id="benefits" >
         <div class="container">
             <h1>Kiçik və Orta Sahibkarlıq üçün biznes əməliyyatlarının optimal həlli</h1>
@@ -281,7 +298,7 @@
             <img src="./assets/images/benefits-icon-success.PNG">
          <p>Video-zəng ilə verifikasiya</p>
         </div>
-        <a class="d-flex" href="#">Daha ətraflı <span class="material-symbols-outlined">
+        <a class="d-flex" href="./Pages/Accounts/account.html">Daha ətraflı <span class="material-symbols-outlined">
             arrow_forward
             </span></a>
             </div>
@@ -290,13 +307,13 @@
                 <h6>Onlayn kreditlərlə biznesinizi genişləndirin</h6>
                 <div class="benefits-flex-div d-flex">
                     <img src="./assets/images/benefits-icon-success.PNG">
-                 <p>Dünyanın istənilən nöqtəsindən, <br> 24/7 rejimində</p>
+                 <p>Girovsuz</p>
                 </div>
                 <div class="benefits-flex-div d-flex">
                     <img src="./assets/images/benefits-icon-success.PNG">
                  <p>Onlayn platforma üzərindən idarəetmə</p>
                 </div>
-                <a class="d-flex" href="#">Daha ətraflı <span class="material-symbols-outlined">
+                <a class="d-flex" href="./Pages/Business credit/businesscredit.html">Daha ətraflı <span class="material-symbols-outlined">
                     arrow_forward
                     </span></a>
             </div>
@@ -305,13 +322,13 @@
                 <h6>Əməkhaqqı layihəsinə qoşulun</h6>
                 <div class="benefits-flex-div d-flex">
                     <img src="./assets/images/benefits-icon-success.PNG">
-                 <p>Dünyanın istənilən nöqtəsindən, <br> 24/7 rejimində</p>
+                 <p>Əmək haqlarının rahat və təhlükəsiz ödənişi</p>
                 </div>
                 <div class="benefits-flex-div d-flex">
                     <img src="./assets/images/benefits-icon-success.PNG">
                  <p>Onlayn platforma üzərindən idarəetmə</p>
                 </div>
-                <a class="d-flex" href="#">Daha ətraflı <span class="material-symbols-outlined">
+                <a class="d-flex" href="./Pages/Salary cards/salarycards.html">Daha ətraflı <span class="material-symbols-outlined">
                     arrow_forward
                     </span></a>
                 
@@ -321,6 +338,8 @@
         
     </div>
       </section>
+      <!-- BENEFITS END -->
+      <!-- PRODUCTS START -->
       <section id="products">
 <div class="container">
 <h2>
@@ -328,7 +347,7 @@
 </h2>
 <div class="products-parent">
 <a href="./Pages/POS-Terminal/posterminal.html">
-    <div class="product-pos">
+    <div class="product-pos d-flex flex-column justify-content-around">
 <h5>
     POS–terminal və <br> E–kassa
 </h5>
@@ -341,7 +360,8 @@
     </div>
 </a>
 
-<a href="#"><div class="product-credit">
+<a href="./Pages/Business cards/businesscard.html">
+  <div class="product-credit d-flex flex-column justify-content-around">
     
         <h5>
            
@@ -351,11 +371,12 @@
         <p>
             Ezamiyyə, nümayəndəlik və digər biznes xərclərinin idarə edilməsi üçün kartların onlayn sifarişi       
         </p>
-        <a class="d-flex" href="#">Daha ətraflı <span class="material-symbols-outlined">
+        <a class="d-flex" href="./Pages/Business cards/businesscard.html">Daha ətraflı <span class="material-symbols-outlined">
             arrow_forward
             </span></a>
 </div></a>
-<a href="#"><div class="product-finance">
+<a href="https://www.pashabank.az/sme_banking/az/node/29">
+  <div class="product-finance d-flex flex-column justify-content-around">
     <h5>
         
         İnvoysların maliyyələşdirilməsi
@@ -366,11 +387,12 @@
         Mal və ya xidmətlərin təchizatının rahat maliyyələşdirilməsi
                         
     </p>
-    <a class="d-flex" href="#">Daha ətraflı <span class="material-symbols-outlined">
+    <a class="d-flex" href="https://www.pashabank.az/sme_banking/az/node/29">Daha ətraflı <span class="material-symbols-outlined">
         arrow_forward
         </span></a>
 </div></a>
-<a href="./Pages/E-commerce/ecommerce.html"><div class="product-commerce">
+<a href="./Pages/E-commerce/ecommerce.html">
+  <div class="product-commerce d-flex flex-column justify-content-around">
     <h5>
         
         
@@ -386,7 +408,8 @@
         arrow_forward
         </span></a>
 </div></a>
-<a href="./Pages/Guarantees/guarantees.html"><div class="product-banking">
+<a href="./Pages/Guarantees/guarantees.html">
+  <div class="product-banking d-flex flex-column justify-content-around">
     <h5>
         
         
@@ -414,6 +437,8 @@
 </div>
 </div>
       </section>
+      <!-- PRODUCTS END  -->
+      <!-- FEATURES START -->
       <section id="features">
         <div class="container">
             <div class="row">
@@ -444,6 +469,8 @@
             </div>
         </div>
       </section>
+      <!-- FEATURES END -->
+      <!-- BUNDLES START -->
       <section id="bundles">
         <div class="container">
             <div class="row">
@@ -559,6 +586,8 @@
         </div>
         
       </section>
+      <!-- BUNDLES END -->
+      <!-- MODAL START -->
       <section id="modal" class="d-none modal-check">
         <div class="modal-content">
           <div class="modal-header">
@@ -637,6 +666,8 @@ Hesab aç
           </div>
         </div>
       </section>
+      <!-- MODAL END -->
+      <!-- MOBILE BANKING START -->
       <section id="mobile-banking">
         <div class="container">
           <div class="mobile-text">
@@ -662,6 +693,8 @@ Hesab aç
         </div>
         </div>
       </section>
+      <!-- MOBILE BANKING END -->
+      <!-- EXCHANGE START -->
       <section id="exchange">
         <div class="container">
           <div class="exchange-header">
@@ -776,6 +809,8 @@ Hesab aç
           
         </div>
       </section>
+      <!-- EXCHANGE END -->
+      <!-- INFO START -->
       <section id="info">
 <div class="container">
   <div class="info-text">
@@ -786,7 +821,7 @@ Hesab aç
       <p>
         03.04.2023
     </p>
-    <a href="#">
+    <a href="https://www.pashabank.az/press_centre,1884/lang,az/">
       
       “PAŞA Bank” fərqli uşaqları dəstəkləməyə səsləyir
                         
@@ -796,7 +831,7 @@ Hesab aç
       <p>
         17.04.2023
     </p>
-    <a href="#">
+    <a href="https://www.pashabank.az/press_centre,1884/lang,az/">
       
       
       “PAŞA Bank” “Novruz sevinci 2023” xeyriyyə aksiyasına qoşulub
@@ -808,7 +843,7 @@ Hesab aç
       <p>
         04.04.2023
     </p>
-    <a href="#">
+    <a href="https://www.pashabank.az/press_centre,1884/lang,az/">
       
       
       “PAŞA Bank” gənclər arasında sahibkarlıq bacarıqlarının inkişaf etdirilməsini dəstəkləyir
@@ -820,7 +855,7 @@ Hesab aç
       <p>
         15.04.2023
     </p>
-    <a href="#">
+    <a href="https://www.pashabank.az/press_centre,1884/lang,az/">
       
       
       “PAŞA Bank” növbəti ağacəkmə aksiyasına qoşulub
@@ -836,16 +871,17 @@ Hesab aç
 </div>
 </div>
       </section>
+      <!-- INFO END -->
     </main>
-    <footer id="home-footer">
+    <footer>
 <section id="footer-contacts">
 <div class="container">
   <div class="row"> <li class="footer-icons-responsive">
-    <a href="#"><img src="./assets/images/facebookicon.PNG" alt="facebook"></a>
-    <a href="#"><img src="./assets/images/twittericom.PNG" alt="twitter"></a>
-    <a href="#"><img src="./assets/images/linkedin.PNG" alt="linkedin"></a>
-    <a href="#"><img src="./assets/images/youtube.PNG" alt="youtube"></a>
-    <a href="#"><img src="./assets/images/instagram.PNG" alt="instagram"></a>
+    <a href="https://www.facebook.com/"><img src="./assets/images/facebookicon.PNG" alt="facebook"></a>
+    <a href="https://www.twitter.com/"><img src="./assets/images/twittericom.PNG" alt="twitter"></a>
+    <a href="https://www.linkedin.com/"><img src="./assets/images/linkedin.PNG" alt="linkedin"></a>
+    <a href="https://www.youtube.com/"><img src="./assets/images/youtube.PNG" alt="youtube"></a>
+    <a href="https://www.instagram.com/"><img src="./assets/images/instagram.PNG" alt="instagram"></a>
   </li>
     <div class="footer-logo footer-contacts-item">
       <a href="#">
@@ -895,45 +931,45 @@ Hesab aç
     <div class="footer-nav-items ">
       <ul>
       <li>Korporativ Bankçılıq</li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Hesablaşma-kassa xidmətləri
     </a></li>
       
-      <li><a href="">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Depozitlər
     </a></li>
-      <li><a href="">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         İnkassasiya
     </a></li>
-      <li><a href="">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Bank seyfləri
     </a></li>
-      <li><a href="">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Bank kartları
     </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         
         Korporativ kreditləşmə
                             
       </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Faktorinq 
     </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         
         Sənədli əməliyyatlar
                             
       </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Ekvayrinq (POS) xidmətləri
     </a></li>
-      <li><a href="#"> 
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14"> 
         Distant bank xidmətləri
     </a></li>
-      <li><a href="">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Qeyri-maliyyə xidmətləri
     </a></li>
-    <li><a href="">
+    <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
       
       Ümumi şərtlər toplusu 
                             
@@ -943,45 +979,45 @@ Hesab aç
     <div  class="footer-nav-items">
       <ul>
         <li>Kiçik və Orta Biznes</li>
-        <li><a href="#">
+        <li><a href="./Pages/Accounts/account.html">
           Biznes üçün hesab
       </a></li>
         
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Əməkhaqqı layihısi
       </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/E-commerce/ecommerce.html">
           Elektron ticarət
       </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/POS-Terminal/posterminal.html">
           POS-terminal vı E-kassa
       </a></li>
         <li><a href="">
           Biznes kartlar
       </a></li>
-        <li><a href="">
+        <li><a href="./Pages/Business credit/businesscredit.html">
           
           Onlayn biznes krediti
                               
         </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
          İnvoyslarin maliyyələşdirilməsi
       </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/Guarantees/guarantees.html">
           
           Bank qarantiyası
                               
         </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/Accounts/account.html">
           Ekspress-Tender qarantiyası
       </a></li>
-        <li><a href="#"> 
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/36"> 
           Akkreditiv
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/38">
           Ticarətin maliyyələşdirilməsi
       </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         
         Linklə ödəniş
                               
@@ -991,45 +1027,45 @@ Hesab aç
     <div  class="footer-nav-items">
       <ul>
         <li>Fərdi Bankçılıq</li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Private Banking
       </a></li>
         
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Hesablaşma-kassa xidmətləri
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Depozitlər
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Bank seyfləri
       </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/Business cards/businesscard.html">
           Bank kartları
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           
         Distant bank xidmətləri
                               
         </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         Əlaqə mərkəzi
       </a></li>
-        <li><a href="#">
+        <li><a href="./Pages/Business credit/businesscredit.html">
           
           Kreditlər
                               
         </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Mobil əlavə
       </a></li>
-        <li><a href="#"> 
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14"> 
           Endirim platforması
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Endirim platforması
       </a></li>
-      <li><a href="#">
+      <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
         
        Onlayn xidmətlər
                               
@@ -1039,41 +1075,41 @@ Hesab aç
     <div  class="footer-nav-items">
       <ul >
         <li> Digər</li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
          İnvestisiya bankçılığı
       </a></li>
         
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Maliyyə İnstitutları
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Haqqımızda
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
          Əməliyyat ölkələri
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           Təklif və şikayətlər
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           
           Filiallar və bankomatlar 
                               
         </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
          Əlaqə
       </a></li>
-        <li><a href="#">
+        <li><a href="https://www.pashabank.az/sme_banking/az/node/14">
           
           Sənədli əməliyyatlar
                               
         </a></li>
         <li class="d-flex footer-icons">
-          <a href="#"><img src="./assets/images/facebookicon.PNG" alt="facebook"></a>
-          <a href="#"><img src="./assets/images/twittericom.PNG" alt="twitter"></a>
-          <a href="#"><img src="./assets/images/linkedin.PNG" alt="linkedin"></a>
-          <a href="#"><img src="./assets/images/youtube.PNG" alt="youtube"></a>
-          <a href="#"><img src="./assets/images/instagram.PNG" alt="instagram"></a>
+          <a href="https://www.facebook.com/"><img src="./assets/images/facebookicon.PNG" alt="facebook"></a>
+          <a href="https://www.twitter.com/"><img src="./assets/images/twittericom.PNG" alt="twitter"></a>
+          <a href="https://www.linkedin.com/"><img src="./assets/images/linkedin.PNG" alt="linkedin"></a>
+          <a href="https://www.youtube.com/"><img src="./assets/images/youtube.PNG" alt="youtube"></a>
+          <a href="https://www.instagram.com/"><img src="./assets/images/instagram.PNG" alt="instagram"></a>
         </li>
 
         

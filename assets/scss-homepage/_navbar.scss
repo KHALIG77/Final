@@ -1,4 +1,8 @@
 #navbar{
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
     width: 100%;
     position: fixed;
     background-color: white;
@@ -7,7 +11,7 @@
 }
 
 .container-navbar{
-    padding-top: 10px;
+    // padding-top: 10px;
     z-index: 5;
     display: flex;
     justify-content: space-around;
@@ -52,6 +56,8 @@ i{
     color:red;
 }
  .header-info{
+   padding-top: 10px;
+    border-top: 1px solid rgb(196, 181, 181);
     position: relative;
     top:0;
     z-index: 10;
@@ -104,7 +110,7 @@ i{
         display: block;
     }
     .container-navbar{
-        padding-top: 20px;
+      
         justify-content: space-between;
     }
     .hamburger-menu{

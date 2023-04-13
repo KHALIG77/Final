@@ -5,17 +5,21 @@
 }
 
 ::-webkit-scrollbar {
-  height: 3px;
+  height: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(5, 141, 102);
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid white;
 }
 
 body {
   background-color: #fafafa;
+}
+
+.carousel-item {
+  transition: 1s ease-in-out;
 }
 
 .d-none {
@@ -25,7 +29,7 @@ body {
 .btn {
   color: white;
   background-color: #058d66;
-  padding: 8px 26px;
+  padding: 13px 26px;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
@@ -36,12 +40,51 @@ body {
   background-color: rgb(164, 255, 164);
 }
 
-.responsive-nav {
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: white;
+  z-index: 1000;
 }
-.responsive-nav a {
-  padding-left: 20px;
-  color: rgba(0, 0, 0, 0.5);
+.loading img {
+  width: 100px;
+  height: 100px;
+}
+.loading h2 {
+  font-weight: 300;
+}
+
+@keyframes lefttoright {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.loading-end {
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transform: scale(2);
+}
+
+.section-animation {
+  transition: 0.8s ease-in-out;
+  animation-name: lefttoright;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  opacity: 1 !important;
+}
+
+.opacity-animation {
+  opacity: 0;
 }
 
 #opening-account {
@@ -206,15 +249,17 @@ footer ul {
 }
 #navbar {
   width: 100%;
-  height: 80px;
   position: fixed;
   background-color: white;
   z-index: 100;
   top: 0;
 }
+#navbar a {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .container-navbar {
-  padding-top: 10px;
   z-index: 5;
   display: flex;
   justify-content: space-around;
@@ -257,6 +302,8 @@ i {
 }
 
 .header-info {
+  padding-top: 10px;
+  border-top: 1px solid rgb(196, 181, 181);
   position: relative;
   top: 0;
   z-index: 10;
@@ -312,12 +359,24 @@ i {
     display: block;
   }
   .container-navbar {
-    padding-top: 20px;
     justify-content: space-between;
   }
   .hamburger-menu {
     color: black;
     display: none;
+  }
+  .ul-business li, .ul-credit li, .ul-transaction li, .ul-additional li, .ul-factoring li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  .responsive-nav {
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  .ul-business a, .ul-additional a, .ul-credit a, .ul-factoring a, .ul-transaction a {
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 #slider-account {

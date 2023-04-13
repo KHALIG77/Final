@@ -2,7 +2,7 @@
     font-size: 30px ;
     width: 80%;
     padding-left: 28px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 48px;
     letter-spacing: .25px;  
     margin:40px 0;
@@ -39,8 +39,10 @@ justify-content: space-between;
 }
 .benefits-flex-div {
     img{
-        width: 30px;
-        height: 25px;
+        
+        width: 25px;
+        height: 30px;
+      margin-right: 10px;
     }
     
    

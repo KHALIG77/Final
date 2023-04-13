@@ -2,7 +2,7 @@
     font-size: 32px;
     padding-left: 28px;
     width: 60%;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 48px;
     letter-spacing: .25px;  
     margin:40px 0;
@@ -20,7 +20,7 @@
 }
 .product-pos,.product-credit{
     &:hover{
-        box-shadow: 1px 1px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     background-color: #e7f4f9;
     margin-left:15px;
@@ -62,7 +62,7 @@
     margin-left: 15px;
     background-position: 100%;
     &:hover{
-        box-shadow: 1px 1px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     a{
         color: #099a71;
@@ -106,5 +106,8 @@
         background-image: url("") !important;
         padding-right: 0px !important;
         height: 300px;
+    }
+    .product-finance,.product-commerce,.product-banking{
+        margin-top: 0;
     }
 }

@@ -20,7 +20,27 @@ btnSubmit.addEventListener("click",function(){
     let textCheck = document.querySelector("#modal-for-guarantees h3")
    
     const phoneRegex = /^(050|051|055|070|077|099|010)\d{7}$/;
-    if(requestNameValue.length>3&&phoneRegex.test(requestNumberValue)){
+    const nameRegex = /^[a-zA-Z]+$/;
+    if(nameRegex.test(requestNameValue)&&phoneRegex.test(requestNumberValue)){
+        const user ={
+            name:"",
+            number:0
+        }
+        user.name = requestNameValue
+        user.number = requestNumberValue
+fetch('https://jsonplaceholder.typicode.com/posts',{
+method:'POST',
+headers:{
+    'Content-type':'application/json'
+},
+body:JSON.stringify(user)}).then(responce => responce.json()).then(user =>{
+    console.log('Success',user) ;
+
+}).catch((error) =>{
+    console.log("Error",error)
+})
+
+
         sectionModal.classList.remove("d-none")
         imageCheck.setAttribute("src","../../assets/images/done.svg")
         textCheck.textContent = "Sorğunuz uğurla göndərildi"

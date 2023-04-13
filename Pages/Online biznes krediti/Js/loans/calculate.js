@@ -45,8 +45,6 @@ else{
 })
 
 
-
-
   countTextInput.addEventListener("input",function(){
 //    console.log(countTextInput.value)
 countValue = Number(countTextInput.value)
